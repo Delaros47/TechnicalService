@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="FluentValidation" Version="10.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Universal\Universal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DevExpress.XtraEditors.v21.2">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\DevExpress 21.2\Components\Offline Packages\devexpress.win.navigation\21.2.5\lib\netcoreapp3.0\DevExpress.XtraEditors.v21.2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
