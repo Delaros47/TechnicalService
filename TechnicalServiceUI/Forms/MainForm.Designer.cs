@@ -236,6 +236,7 @@
             this.barBtnMalfunctionProducts.Id = 9;
             this.barBtnMalfunctionProducts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnMalfunctionProducts.ImageOptions.SvgImage")));
             this.barBtnMalfunctionProducts.Name = "barBtnMalfunctionProducts";
+            this.barBtnMalfunctionProducts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnMalfunctionProducts_ItemClick);
             // 
             // barButtonItem3
             // 
@@ -289,6 +290,7 @@
             this.btnBtnNewEmployee.Id = 16;
             this.btnBtnNewEmployee.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBtnNewEmployee.ImageOptions.SvgImage")));
             this.btnBtnNewEmployee.Name = "btnBtnNewEmployee";
+            this.btnBtnNewEmployee.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBtnNewEmployee_ItemClick);
             // 
             // barBtnEmployees
             // 

@@ -125,5 +125,20 @@ namespace TechnicalServiceUI.Forms
 
 
         }
+
+        private void btnClearEmployees_Click(object sender, EventArgs e)
+        {
+            txtEmployeeId.Text = "";
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
+            txtPhoneNumber.Text = "";
+            txtEmailAddress.Text = "";
+            txtIdentityNumber.Text = "";
+            deDateOfBirth.Text = "";
+            lueDepartmentName.EditValue = -1;
+            pictureEditEmployeePicture.Image = null;
+            memoAddress.Text = "";
+
+        }
     }
 }

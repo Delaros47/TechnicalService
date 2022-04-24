@@ -5,16 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Universal.Entities;
 
-namespace Entities.Concrete
+namespace Entities.DTOs
 {
-    public class ProductAcceptance:IEntity
+    public class ProductAcceptanceDetailDto:IDto
     {
+
         public int ProductAcceptanceId { get; set; }
-        public int CustomerId { get; set; }
-        public int EmployeeId { get; set; }
+        public string CustomerName { get; set; }
+        public string EmployeeName { get; set; }
         public DateTime ArrivalDate { get; set; }
         public DateTime LeftDate { get; set; }
         public string ProductSeriesNumber { get; set; }
+
 
     }
 }

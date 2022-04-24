@@ -16,6 +16,7 @@ namespace Entities.Concrete
         public DateTime SalesDate { get; set; }
         public int Unit { get; set; }
         public decimal Price { get; set; }
+        public string ProductSeriesNumber { get; set; }
 
 
     }

@@ -31,6 +31,8 @@ namespace TechnicalServiceUI.Forms
         DepartmentsForm _departmentsForm;
         NotesForm _notesForm;
         EmployeesForm _employeesForm;
+        EmployeeAddForm _employeeAddForm;
+        ProductAcceptancesForm _productAcceptancesForm;
         public MainForm()
         {
             InitializeComponent();
@@ -224,6 +226,25 @@ namespace TechnicalServiceUI.Forms
                 _employeesForm = new EmployeesForm();
                 _employeesForm.MdiParent = this;
                 _employeesForm.Show();
+            }
+        }
+
+        private void btnBtnNewEmployee_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_employeeAddForm==null || _employeeAddForm.IsDisposed)
+            {
+                _employeeAddForm = new EmployeeAddForm();
+                _employeeAddForm.Show();
+            }
+        }
+
+        private void barBtnMalfunctionProducts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_productAcceptancesForm==null || _productAcceptancesForm.IsDisposed)
+            {
+                _productAcceptancesForm = new ProductAcceptancesForm();
+                _productAcceptancesForm.MdiParent = this;
+                _productAcceptancesForm.Show();
             }
         }
     }
