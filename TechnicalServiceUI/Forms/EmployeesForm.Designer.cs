@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesForm));
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition11 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition12 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition13 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition14 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition15 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition16 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition17 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition18 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition19 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition20 = new DevExpress.XtraLayout.RowDefinition();
             this.gridControlEmployees = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewEmployees = new TechnicalServiceUI.Controls.MyGridView();
             this.colEmployeeId = new TechnicalServiceUI.Controls.MyGridColumn();
@@ -159,6 +159,7 @@
             this.gridViewEmployees.OptionsView.ShowGroupPanel = false;
             this.gridViewEmployees.OptionsView.ShowViewCaption = true;
             this.gridViewEmployees.ViewCaption = "Employees";
+            this.gridViewEmployees.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewEmployees_FocusedRowChanged);
             // 
             // colEmployeeId
             // 
@@ -289,6 +290,7 @@
             this.btnDeleteEmployee.Size = new System.Drawing.Size(113, 23);
             this.btnDeleteEmployee.TabIndex = 3;
             this.btnDeleteEmployee.Text = "Delete Employee";
+            this.btnDeleteEmployee.Click += new System.EventHandler(this.btnDeleteEmployee_Click);
             // 
             // btnUpdateEmployee
             // 
@@ -300,6 +302,7 @@
             this.btnUpdateEmployee.Size = new System.Drawing.Size(113, 23);
             this.btnUpdateEmployee.TabIndex = 2;
             this.btnUpdateEmployee.Text = "Update Employee";
+            this.btnUpdateEmployee.Click += new System.EventHandler(this.btnUpdateEmployee_Click);
             // 
             // btnAddEmployee
             // 
@@ -381,9 +384,6 @@
             this.txtPhoneNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPhoneNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPhoneNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPhoneNumber.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtPhoneNumber.Properties.Mask.EditMask = "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
-            this.txtPhoneNumber.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtPhoneNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtPhoneNumber.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtPhoneNumber.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -415,10 +415,6 @@
             // 
             this.txtEmailAddress.Location = new System.Drawing.Point(102, 108);
             this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
-            this.txtEmailAddress.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
-    "-])+)+";
-            this.txtEmailAddress.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEmailAddress.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEmailAddress.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEmailAddress.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -438,8 +434,6 @@
             this.txtIdentityNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtIdentityNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtIdentityNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtIdentityNumber.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
-            this.txtIdentityNumber.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtIdentityNumber.Properties.MaskSettings.Set("mask", "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?");
             this.txtIdentityNumber.Properties.MaskSettings.Set("isAutoComplete", false);
             this.txtIdentityNumber.Properties.MaskSettings.Set("isOptimistic", false);
@@ -476,6 +470,7 @@
             this.txtEmployeeId.Name = "txtEmployeeId";
             this.txtEmployeeId.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtEmployeeId.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtEmployeeId.Properties.ReadOnly = true;
             this.txtEmployeeId.Size = new System.Drawing.Size(223, 20);
             this.txtEmployeeId.StyleController = this.myDataLayoutControl1;
             this.txtEmployeeId.TabIndex = 4;
@@ -497,41 +492,41 @@
             this.layoutControlItem10});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition1.Width = 200D;
+            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition2.Width = 200D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition1});
-            rowDefinition1.Height = 24D;
-            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition2.Height = 24D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition3.Height = 24D;
-            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition4.Height = 24D;
-            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition5.Height = 24D;
-            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition6.Height = 24D;
-            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition7.Height = 24D;
-            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition8.Height = 24D;
-            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition9.Height = 125D;
-            rowDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition10.Height = 125D;
-            rowDefinition10.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition2});
+            rowDefinition11.Height = 24D;
+            rowDefinition11.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition12.Height = 24D;
+            rowDefinition12.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition13.Height = 24D;
+            rowDefinition13.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition14.Height = 24D;
+            rowDefinition14.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition15.Height = 24D;
+            rowDefinition15.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition16.Height = 24D;
+            rowDefinition16.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition17.Height = 24D;
+            rowDefinition17.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition18.Height = 24D;
+            rowDefinition18.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition19.Height = 125D;
+            rowDefinition19.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition20.Height = 125D;
+            rowDefinition20.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition1,
-            rowDefinition2,
-            rowDefinition3,
-            rowDefinition4,
-            rowDefinition5,
-            rowDefinition6,
-            rowDefinition7,
-            rowDefinition8,
-            rowDefinition9,
-            rowDefinition10});
+            rowDefinition11,
+            rowDefinition12,
+            rowDefinition13,
+            rowDefinition14,
+            rowDefinition15,
+            rowDefinition16,
+            rowDefinition17,
+            rowDefinition18,
+            rowDefinition19,
+            rowDefinition20});
             this.Root.Size = new System.Drawing.Size(337, 463);
             this.Root.TextVisible = false;
             // 

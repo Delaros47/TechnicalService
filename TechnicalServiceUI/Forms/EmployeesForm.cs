@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;   
 using System.Threading.Tasks;
@@ -42,7 +43,7 @@ namespace TechnicalServiceUI.Forms
                 Email = txtEmailAddress.Text,
                 IdentityNumber = txtIdentityNumber.Text,
                 Phone = txtPhoneNumber.Text,
-                Picture = System.IO.File.ReadAllBytes(pictureEditEmployeePicture.GetLoadedImageLocation()),
+                Picture = File.ReadAllBytes(pictureEditEmployeePicture.GetLoadedImageLocation()),
                 DepartmentId = Convert.ToInt32(lueDepartmentName.EditValue.ToString()),
 
             });
@@ -64,6 +65,65 @@ namespace TechnicalServiceUI.Forms
         private void GetAllEmployeesDetailDto()
         {
             gridControlEmployees.DataSource = _employeeService.GetEmployeesDetailDto().Data;
+        }
+
+        private void btnUpdateEmployee_Click(object sender, EventArgs e)
+        {
+            var result = _employeeService.Update(new Employee
+            {
+                EmployeeId = Convert.ToInt32(txtEmployeeId.Text),
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Address = memoAddress.Text,
+                DateOfBirth = Convert.ToDateTime(deDateOfBirth.Text),
+                Email = txtEmailAddress.Text,
+                IdentityNumber = txtIdentityNumber.Text,
+                Phone = txtPhoneNumber.Text,
+                Picture = File.ReadAllBytes(pictureEditEmployeePicture.GetLoadedImageLocation()),
+                DepartmentId = Convert.ToInt32(lueDepartmentName.EditValue.ToString()),
+
+            });
+
+            if (result.Success)
+            {
+                XtraMessageBox.Show(result.Message, "Updating an Employee", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                GetAllEmployeesDetailDto();
+            }
+        }
+
+        private void btnDeleteEmployee_Click(object sender, EventArgs e)
+        {
+            var result = _employeeService.Update(new Employee
+            {
+                EmployeeId = Convert.ToInt32(txtEmployeeId.Text)
+            });
+
+            if (result.Success)
+            {
+                XtraMessageBox.Show(result.Message, "Deleting an Employee", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                GetAllEmployeesDetailDto();
+            }
+        }
+
+        private void gridViewEmployees_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtEmployeeId.Text = gridViewEmployees.GetFocusedRowCellValue("EmployeeId").ToString();
+            txtFirstName.Text = gridViewEmployees.GetFocusedRowCellValue("FirstName").ToString();
+            txtLastName.Text = gridViewEmployees.GetFocusedRowCellValue("LastName").ToString();
+            txtEmailAddress.Text = gridViewEmployees.GetFocusedRowCellValue("Email").ToString();
+            txtIdentityNumber.Text = gridViewEmployees.GetFocusedRowCellValue("IdentityNumber").ToString();
+            txtPhoneNumber.Text = txtLastName.Text = gridViewEmployees.GetFocusedRowCellValue("Phone").ToString();
+            deDateOfBirth.Text = txtLastName.Text = gridViewEmployees.GetFocusedRowCellValue("DateOfBirth").ToString();
+            lueDepartmentName.Text = txtLastName.Text = gridViewEmployees.GetFocusedRowCellValue("DepartmentName").ToString();
+            memoAddress.Text = txtLastName.Text = gridViewEmployees.GetFocusedRowCellValue("Address").ToString();
+
+            using (MemoryStream ms = new MemoryStream((byte[])gridViewEmployees.GetFocusedRowCellValue("Picture")))
+            {
+                pictureEditEmployeePicture.Image = Image.FromStream(ms);
+            }
+       
+
+
         }
     }
 }
