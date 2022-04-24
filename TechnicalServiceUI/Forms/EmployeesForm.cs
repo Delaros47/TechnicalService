@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
+using System.Text;   
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -27,7 +27,8 @@ namespace TechnicalServiceUI.Forms
 
         private void EmployeesForm_Load(object sender, EventArgs e)
         {
-
+            GetAllDepartments();
+            GetAllEmployeesDetailDto();
         }
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
@@ -45,6 +46,12 @@ namespace TechnicalServiceUI.Forms
                 DepartmentId = Convert.ToInt32(lueDepartmentName.EditValue.ToString()),
 
             });
+
+            if (result.Success)
+            {
+                XtraMessageBox.Show(result.Message,"Adding an Employee",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                GetAllEmployeesDetailDto();
+            }
         }
 
         private void GetAllDepartments()
@@ -52,6 +59,11 @@ namespace TechnicalServiceUI.Forms
             lueDepartmentName.Properties.DataSource = _departmentService.GetAll().Data;
             lueDepartmentName.Properties.DisplayMember = "DepartmentName";
             lueDepartmentName.Properties.ValueMember = "DepartmentId";
+        }
+
+        private void GetAllEmployeesDetailDto()
+        {
+            gridControlEmployees.DataSource = _employeeService.GetEmployeesDetailDto().Data;
         }
     }
 }
