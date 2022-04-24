@@ -33,14 +33,14 @@
             DevExpress.XtraCharts.Doughnut3DSeriesView doughnut3dSeriesView1 = new DevExpress.XtraCharts.Doughnut3DSeriesView();
             this.gridControlProductAcceptances = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewProductAcceptances = new TechnicalServiceUI.Controls.MyGridView();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.chartControlProductAcceptances = new DevExpress.XtraCharts.ChartControl();
             this.colProductAcceptanceId = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colCustomerName = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colEmployeeId = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colArrivalDate = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colLeftDate = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colProductSeriesNumber = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.chartControlProductAcceptances = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProductAcceptances)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductAcceptances)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -97,30 +97,6 @@
             this.gridViewProductAcceptances.OptionsView.ShowGroupPanel = false;
             this.gridViewProductAcceptances.OptionsView.ShowViewCaption = true;
             this.gridViewProductAcceptances.ViewCaption = "Product Acceptances";
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Controls.Add(this.chartControlProductAcceptances);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(634, 0);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(659, 543);
-            this.panelControl1.TabIndex = 1;
-            // 
-            // chartControlProductAcceptances
-            // 
-            simpleDiagram3d1.RotationMatrixSerializable = "1;0;0;0;0;0.5000000000000001;-0.8660254037844386;0;0;0.8660254037844386;0.5000000" +
-    "000000001;0;0;0;0;1";
-            this.chartControlProductAcceptances.Diagram = simpleDiagram3d1;
-            this.chartControlProductAcceptances.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartControlProductAcceptances.Location = new System.Drawing.Point(2, 2);
-            this.chartControlProductAcceptances.Name = "chartControlProductAcceptances";
-            series1.Name = "Series 1";
-            series1.View = doughnut3dSeriesView1;
-            this.chartControlProductAcceptances.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControlProductAcceptances.Size = new System.Drawing.Size(655, 539);
-            this.chartControlProductAcceptances.TabIndex = 0;
             // 
             // colProductAcceptanceId
             // 
@@ -180,6 +156,30 @@
             this.colProductSeriesNumber.VisibleIndex = 5;
             this.colProductSeriesNumber.Width = 125;
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.chartControlProductAcceptances);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(634, 0);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(659, 543);
+            this.panelControl1.TabIndex = 1;
+            // 
+            // chartControlProductAcceptances
+            // 
+            simpleDiagram3d1.RotationMatrixSerializable = "1;0;0;0;0;0.5000000000000001;-0.8660254037844386;0;0;0.8660254037844386;0.5000000" +
+    "000000001;0;0;0;0;1";
+            this.chartControlProductAcceptances.Diagram = simpleDiagram3d1;
+            this.chartControlProductAcceptances.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControlProductAcceptances.Location = new System.Drawing.Point(2, 2);
+            this.chartControlProductAcceptances.Name = "chartControlProductAcceptances";
+            series1.Name = "Series 1";
+            series1.View = doughnut3dSeriesView1;
+            this.chartControlProductAcceptances.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1};
+            this.chartControlProductAcceptances.Size = new System.Drawing.Size(655, 539);
+            this.chartControlProductAcceptances.TabIndex = 0;
+            // 
             // ProductAcceptancesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +189,7 @@
             this.Controls.Add(this.gridControlProductAcceptances);
             this.Name = "ProductAcceptancesForm";
             this.Text = "Product Acceptance";
+            this.Load += new System.EventHandler(this.ProductAcceptancesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProductAcceptances)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductAcceptances)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
