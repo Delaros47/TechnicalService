@@ -11,8 +11,8 @@ namespace Entities.DTOs
     {
 
         public int ProductAcceptanceId { get; set; }
-        public string CustomerName { get; set; }
-        public string EmployeeName { get; set; }
+        public string CustomerFullName { get; set; }
+        public string EmployeeFullName { get; set; }
         public DateTime ArrivalDate { get; set; }
         public DateTime LeftDate { get; set; }
         public string ProductSeriesNumber { get; set; }

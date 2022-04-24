@@ -42,6 +42,10 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<EmployeeManager>().As<IEmployeeService>().SingleInstance();
             builder.RegisterType<EfEmployeeDal>().As<IEmployeeDal>().SingleInstance();
 
+            builder.RegisterType<ProductAcceptanceManager>().As<IProductAcceptanceService>().SingleInstance();
+            builder.RegisterType<EfProductAcceptanceDal>().As<IProductAcceptanceDal>().SingleInstance();
+
+
         }
     }
 }
