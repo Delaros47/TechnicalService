@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition9 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition10 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MalfunctionTrackingsForm));
             this.gridControlMalfunctionTrackings = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewMalfunctionTracking = new TechnicalServiceUI.Controls.MyGridView();
@@ -52,6 +52,10 @@
             this.btnUpdateMalfunctionTracking = new TechnicalServiceUI.Controls.MySimpleButton();
             this.btnClearMalfunctionTrackings = new TechnicalServiceUI.Controls.MySimpleButton();
             this.btnDeleteMalfunctionTracking = new TechnicalServiceUI.Controls.MySimpleButton();
+            this.colMalfunctionTrackingId = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colTrackingDate = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colProductSeriesNumber = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colDescription = new TechnicalServiceUI.Controls.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMalfunctionTrackings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMalfunctionTracking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -93,6 +97,11 @@
             this.gridViewMalfunctionTracking.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewMalfunctionTracking.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewMalfunctionTracking.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewMalfunctionTracking.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMalfunctionTrackingId,
+            this.colTrackingDate,
+            this.colProductSeriesNumber,
+            this.colDescription});
             this.gridViewMalfunctionTracking.GridControl = this.gridControlMalfunctionTrackings;
             this.gridViewMalfunctionTracking.Name = "gridViewMalfunctionTracking";
             this.gridViewMalfunctionTracking.OptionsMenu.EnableColumnMenu = false;
@@ -149,26 +158,26 @@
             this.layoutControlItem4});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition2.Width = 200D;
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 200D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition2});
-            rowDefinition6.Height = 24D;
-            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition7.Height = 24D;
-            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition8.Height = 24D;
-            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition9.Height = 150D;
-            rowDefinition9.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition10.Height = 24D;
-            rowDefinition10.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1});
+            rowDefinition1.Height = 24D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition2.Height = 24D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition3.Height = 24D;
+            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition4.Height = 150D;
+            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition5.Height = 24D;
+            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition6,
-            rowDefinition7,
-            rowDefinition8,
-            rowDefinition9,
-            rowDefinition10});
+            rowDefinition1,
+            rowDefinition2,
+            rowDefinition3,
+            rowDefinition4,
+            rowDefinition5});
             this.Root.Size = new System.Drawing.Size(333, 266);
             this.Root.TextVisible = false;
             // 
@@ -319,6 +328,46 @@
             this.btnDeleteMalfunctionTracking.TabIndex = 4;
             this.btnDeleteMalfunctionTracking.Text = "Delete Malfunction Tracking";
             // 
+            // colMalfunctionTrackingId
+            // 
+            this.colMalfunctionTrackingId.Caption = "Tracking ID";
+            this.colMalfunctionTrackingId.FieldName = "TrackingId";
+            this.colMalfunctionTrackingId.Name = "colMalfunctionTrackingId";
+            this.colMalfunctionTrackingId.OptionsColumn.AllowEdit = false;
+            this.colMalfunctionTrackingId.Visible = true;
+            this.colMalfunctionTrackingId.VisibleIndex = 0;
+            this.colMalfunctionTrackingId.Width = 150;
+            // 
+            // colTrackingDate
+            // 
+            this.colTrackingDate.Caption = "Tracking Date";
+            this.colTrackingDate.FieldName = "Date";
+            this.colTrackingDate.Name = "colTrackingDate";
+            this.colTrackingDate.OptionsColumn.AllowEdit = false;
+            this.colTrackingDate.Visible = true;
+            this.colTrackingDate.VisibleIndex = 1;
+            this.colTrackingDate.Width = 150;
+            // 
+            // colProductSeriesNumber
+            // 
+            this.colProductSeriesNumber.Caption = "Product Series Number";
+            this.colProductSeriesNumber.FieldName = "ProductSeriesNumber";
+            this.colProductSeriesNumber.Name = "colProductSeriesNumber";
+            this.colProductSeriesNumber.OptionsColumn.AllowEdit = false;
+            this.colProductSeriesNumber.Visible = true;
+            this.colProductSeriesNumber.VisibleIndex = 2;
+            this.colProductSeriesNumber.Width = 150;
+            // 
+            // colDescription
+            // 
+            this.colDescription.Caption = "Description";
+            this.colDescription.FieldName = "Description";
+            this.colDescription.Name = "colDescription";
+            this.colDescription.OptionsColumn.AllowEdit = false;
+            this.colDescription.Visible = true;
+            this.colDescription.VisibleIndex = 3;
+            this.colDescription.Width = 460;
+            // 
             // MalfunctionTrackingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,5 +416,9 @@
         private Controls.MySimpleButton btnClearMalfunctionTrackings;
         private Controls.MySimpleButton btnUpdateMalfunctionTracking;
         private Controls.MySimpleButton btnAddMalfunctionTracking;
+        private Controls.MyGridColumn colMalfunctionTrackingId;
+        private Controls.MyGridColumn colTrackingDate;
+        private Controls.MyGridColumn colProductSeriesNumber;
+        private Controls.MyGridColumn colDescription;
     }
 }
