@@ -51,6 +51,9 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<TrackingManager>().As<ITrackingService>().SingleInstance();
             builder.RegisterType<EfTrackingDal>().As<ITrackingDal>().SingleInstance();
 
+            builder.RegisterType<InvoiceInfoManager>().As<IInvoiceInfoService>().SingleInstance();
+            builder.RegisterType<EfInvoiceInfoDal>().As<IInvoiceInfoDal>().SingleInstance();
+
 
         }
     }

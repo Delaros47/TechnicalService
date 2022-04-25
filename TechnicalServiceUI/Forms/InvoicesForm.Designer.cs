@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoicesForm));
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition17 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition18 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition19 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition20 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition21 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition22 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition23 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition24 = new DevExpress.XtraLayout.RowDefinition();
             this.gridControlInvoices = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewInvoices = new TechnicalServiceUI.Controls.MyGridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -61,6 +61,9 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.myGridColumn1 = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.myGridColumn2 = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.myGridColumn3 = new TechnicalServiceUI.Controls.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -108,6 +111,10 @@
             this.gridViewInvoices.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewInvoices.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewInvoices.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewInvoices.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.myGridColumn1,
+            this.myGridColumn2,
+            this.myGridColumn3});
             this.gridViewInvoices.GridControl = this.gridControlInvoices;
             this.gridViewInvoices.Name = "gridViewInvoices";
             this.gridViewInvoices.OptionsMenu.EnableColumnMenu = false;
@@ -305,35 +312,35 @@
             this.layoutControlItem7});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition1.Width = 200D;
+            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition3.Width = 200D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition1});
-            rowDefinition1.Height = 24D;
-            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition2.Height = 24D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition3.Height = 24D;
-            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition4.Height = 24D;
-            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition5.Height = 24D;
-            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition6.Height = 24D;
-            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition7.Height = 24D;
-            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition8.Height = 24D;
-            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition3});
+            rowDefinition17.Height = 24D;
+            rowDefinition17.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition18.Height = 24D;
+            rowDefinition18.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition19.Height = 24D;
+            rowDefinition19.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition20.Height = 24D;
+            rowDefinition20.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition21.Height = 24D;
+            rowDefinition21.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition22.Height = 24D;
+            rowDefinition22.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition23.Height = 24D;
+            rowDefinition23.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition24.Height = 24D;
+            rowDefinition24.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition1,
-            rowDefinition2,
-            rowDefinition3,
-            rowDefinition4,
-            rowDefinition5,
-            rowDefinition6,
-            rowDefinition7,
-            rowDefinition8});
+            rowDefinition17,
+            rowDefinition18,
+            rowDefinition19,
+            rowDefinition20,
+            rowDefinition21,
+            rowDefinition22,
+            rowDefinition23,
+            rowDefinition24});
             this.Root.Size = new System.Drawing.Size(319, 228);
             this.Root.TextVisible = false;
             // 
@@ -420,6 +427,30 @@
             this.layoutControlItem7.Text = "Employee Name";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(106, 13);
             // 
+            // myGridColumn1
+            // 
+            this.myGridColumn1.Caption = "myGridColumn1";
+            this.myGridColumn1.Name = "myGridColumn1";
+            this.myGridColumn1.OptionsColumn.AllowEdit = false;
+            this.myGridColumn1.Visible = true;
+            this.myGridColumn1.VisibleIndex = 0;
+            // 
+            // myGridColumn2
+            // 
+            this.myGridColumn2.Caption = "myGridColumn2";
+            this.myGridColumn2.Name = "myGridColumn2";
+            this.myGridColumn2.OptionsColumn.AllowEdit = false;
+            this.myGridColumn2.Visible = true;
+            this.myGridColumn2.VisibleIndex = 1;
+            // 
+            // myGridColumn3
+            // 
+            this.myGridColumn3.Caption = "myGridColumn3";
+            this.myGridColumn3.Name = "myGridColumn3";
+            this.myGridColumn3.OptionsColumn.AllowEdit = false;
+            this.myGridColumn3.Visible = true;
+            this.myGridColumn3.VisibleIndex = 2;
+            // 
             // InvoicesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,6 +460,7 @@
             this.Controls.Add(this.gridControlInvoices);
             this.Name = "InvoicesForm";
             this.Text = "Invoices";
+            this.Load += new System.EventHandler(this.InvoicesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -480,5 +512,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private Controls.MyGridColumn myGridColumn1;
+        private Controls.MyGridColumn myGridColumn2;
+        private Controls.MyGridColumn myGridColumn3;
     }
 }

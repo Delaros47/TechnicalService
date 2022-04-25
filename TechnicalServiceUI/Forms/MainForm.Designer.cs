@@ -510,8 +510,9 @@
             // 
             this.barBtnInvoices.Caption = "Invoices";
             this.barBtnInvoices.Id = 46;
-            this.barBtnInvoices.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barBtnInvoices.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnInvoices.ImageOptions.SvgImage")));
             this.barBtnInvoices.Name = "barBtnInvoices";
+            this.barBtnInvoices.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnInvoices_ItemClick);
             // 
             // ribbonPageMainForm
             // 
