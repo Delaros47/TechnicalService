@@ -26,6 +26,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Employee> Employees { get; set; }
         public DbSet<ProductAcceptance> ProductAcceptances { get; set; }
         public DbSet<ProductSale> ProductSales { get; set; }
+        public DbSet<Tracking> Trackings { get; set; }
 
 
 

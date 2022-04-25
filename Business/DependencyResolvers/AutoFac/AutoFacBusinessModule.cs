@@ -48,6 +48,10 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<ProductSaleManager>().As<IProductSaleService>().SingleInstance();
             builder.RegisterType<EfProductSaleDal>().As<IProductSaleDal>().SingleInstance();
 
+            builder.RegisterType<TrackingManager>().As<ITrackingService>().SingleInstance();
+            builder.RegisterType<EfTrackingDal>().As<ITrackingDal>().SingleInstance();
+
+
         }
     }
 }
