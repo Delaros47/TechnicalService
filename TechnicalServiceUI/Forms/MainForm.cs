@@ -33,6 +33,7 @@ namespace TechnicalServiceUI.Forms
         EmployeesForm _employeesForm;
         EmployeeAddForm _employeeAddForm;
         ProductAcceptancesForm _productAcceptancesForm;
+        ProductSalesForm _productSalesForm;
         public MainForm()
         {
             InitializeComponent();
@@ -245,6 +246,16 @@ namespace TechnicalServiceUI.Forms
                 _productAcceptancesForm = new ProductAcceptancesForm();
                 _productAcceptancesForm.MdiParent = this;
                 _productAcceptancesForm.Show();
+            }
+        }
+
+        private void btnBtnProductSales_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_productSalesForm ==null || _productSalesForm.IsDisposed)
+            {
+                _productSalesForm = new ProductSalesForm();
+                _productSalesForm.MdiParent = this;
+                _productSalesForm.Show();
             }
         }
     }
