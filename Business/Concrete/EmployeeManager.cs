@@ -24,6 +24,11 @@ namespace Business.Concrete
             _employeeDal = employeeDal;
         }
 
+        public IDataResult<List<EmployeesFullNameDto>> GetEmployeesFullNameDto()
+        {
+            return new SuccessDataResult<List<EmployeesFullNameDto>>(_employeeDal.GetEmployeesFullNameDto());
+        }
+
         public IResult Add(Employee employee)
         {
             ValidationTool.Validate(new EmployeeValidator(),employee);

@@ -24,6 +24,11 @@ namespace Business.Concrete
             _customerDal = customerDal;
         }
 
+        public IDataResult<List<CustomersFullNameDto>> GetCustomersFullNameDto()
+        {
+            return new SuccessDataResult<List<CustomersFullNameDto>>(_customerDal.GetCustomersFullNameDto());
+        }
+
         public IResult Add(Customer customer)
         {
             ValidationTool.Validate(new CustomerValidator(),customer);

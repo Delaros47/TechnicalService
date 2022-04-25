@@ -72,6 +72,8 @@
             this.barBtnNewBank = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnBanks = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnWord = new DevExpress.XtraBars.BarButtonItem();
+            this.barbtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
+            this.btnBtnProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageMainForm = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupMainForm = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -85,6 +87,7 @@
             this.ribbonPageGroupBanks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageCustomers = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupCustomers = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupProductSales = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageEmployees = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupEmployees = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupDepartments = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -100,9 +103,6 @@
             this.ribbonPageContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupContact = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.ribbonPageGroupProductSales = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barbtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
-            this.btnBtnProductSales = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -485,6 +485,22 @@
             this.barBtnWord.Name = "barBtnWord";
             this.barBtnWord.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnWord_ItemClick);
             // 
+            // barbtnNewProductSales
+            // 
+            this.barbtnNewProductSales.Caption = "New Product Sales";
+            this.barbtnNewProductSales.Id = 44;
+            this.barbtnNewProductSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barbtnNewProductSales.ImageOptions.SvgImage")));
+            this.barbtnNewProductSales.Name = "barbtnNewProductSales";
+            this.barbtnNewProductSales.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barbtnNewProductSales_ItemClick);
+            // 
+            // btnBtnProductSales
+            // 
+            this.btnBtnProductSales.Caption = "Product Sales";
+            this.btnBtnProductSales.Id = 45;
+            this.btnBtnProductSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBtnProductSales.ImageOptions.SvgImage")));
+            this.btnBtnProductSales.Name = "btnBtnProductSales";
+            this.btnBtnProductSales.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBtnProductSales_ItemClick);
+            // 
             // ribbonPageMainForm
             // 
             this.ribbonPageMainForm.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -585,6 +601,13 @@
             this.ribbonPageGroupCustomers.ItemLinks.Add(this.barBtnCustomerCityStatistics);
             this.ribbonPageGroupCustomers.Name = "ribbonPageGroupCustomers";
             this.ribbonPageGroupCustomers.Text = "Customers";
+            // 
+            // ribbonPageGroupProductSales
+            // 
+            this.ribbonPageGroupProductSales.ItemLinks.Add(this.barbtnNewProductSales);
+            this.ribbonPageGroupProductSales.ItemLinks.Add(this.btnBtnProductSales);
+            this.ribbonPageGroupProductSales.Name = "ribbonPageGroupProductSales";
+            this.ribbonPageGroupProductSales.Text = "Product Sales";
             // 
             // ribbonPageEmployees
             // 
@@ -701,28 +724,6 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // ribbonPageGroupProductSales
-            // 
-            this.ribbonPageGroupProductSales.ItemLinks.Add(this.barbtnNewProductSales);
-            this.ribbonPageGroupProductSales.ItemLinks.Add(this.btnBtnProductSales);
-            this.ribbonPageGroupProductSales.Name = "ribbonPageGroupProductSales";
-            this.ribbonPageGroupProductSales.Text = "Product Sales";
-            // 
-            // barbtnNewProductSales
-            // 
-            this.barbtnNewProductSales.Caption = "New Product Sales";
-            this.barbtnNewProductSales.Id = 44;
-            this.barbtnNewProductSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barbtnNewProductSales.ImageOptions.SvgImage")));
-            this.barbtnNewProductSales.Name = "barbtnNewProductSales";
-            // 
-            // btnBtnProductSales
-            // 
-            this.btnBtnProductSales.Caption = "Product Sales";
-            this.btnBtnProductSales.Id = 45;
-            this.btnBtnProductSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBtnProductSales.ImageOptions.SvgImage")));
-            this.btnBtnProductSales.Name = "btnBtnProductSales";
-            this.btnBtnProductSales.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBtnProductSales_ItemClick);
             // 
             // MainForm
             // 

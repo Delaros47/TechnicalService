@@ -14,26 +14,28 @@ namespace TechnicalServiceUI.Forms
 {
     public partial class MainForm : DevExpress.XtraEditors.XtraForm
     {
-        ProductsForm _productsForm;
-        ProductAddForm _productAddForm;
-        CategoriesForm _categoriesForm;
-        CategoryAddForm _categoryAddForm;
-        ProductStatisticsForm _productStatisticsForm;
-        BrandsForm _brandsForm;
-        BrandAddForm _brandAddForm;
-        BankAddForm _bankAddForm;
-        BanksForm _banksForm;
-        BrandStatisticsForm _brandStatisticsForm;
-        CustomersForm _customersForm;
-        CustomerAddForm _customerAddForm;
-        CustomerCityStatisticsForm _customerCityStatisticsForm;
-        DepartmentAddForm _departmentAddForm;
-        DepartmentsForm _departmentsForm;
-        NotesForm _notesForm;
-        EmployeesForm _employeesForm;
-        EmployeeAddForm _employeeAddForm;
-        ProductAcceptancesForm _productAcceptancesForm;
-        ProductSalesForm _productSalesForm;
+        private ProductsForm _productsForm;
+        private ProductAddForm _productAddForm;
+        private CategoriesForm _categoriesForm;
+        private CategoryAddForm _categoryAddForm;
+        private ProductStatisticsForm _productStatisticsForm;
+        private BrandsForm _brandsForm;
+        private BrandAddForm _brandAddForm;
+        private BankAddForm _bankAddForm;
+        private BanksForm _banksForm;
+        private BrandStatisticsForm _brandStatisticsForm;
+        private CustomersForm _customersForm;
+        private CustomerAddForm _customerAddForm;
+        private CustomerCityStatisticsForm _customerCityStatisticsForm;
+        private DepartmentAddForm _departmentAddForm;
+        private DepartmentsForm _departmentsForm;
+        private NotesForm _notesForm;
+        private EmployeesForm _employeesForm;
+        private EmployeeAddForm _employeeAddForm;
+        private ProductAcceptancesForm _productAcceptancesForm;
+        private ProductSalesForm _productSalesForm;
+        private ProductSalesAddForm _productSalesAddForm;
+
         public MainForm()
         {
             InitializeComponent();
@@ -256,6 +258,15 @@ namespace TechnicalServiceUI.Forms
                 _productSalesForm = new ProductSalesForm();
                 _productSalesForm.MdiParent = this;
                 _productSalesForm.Show();
+            }
+        }
+
+        private void barbtnNewProductSales_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_productSalesAddForm==null || _productSalesAddForm.IsDisposed)
+            {
+                _productSalesAddForm = new ProductSalesAddForm();
+                _productSalesAddForm.Show();
             }
         }
     }

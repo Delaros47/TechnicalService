@@ -37,5 +37,19 @@ namespace DataAccess.Concrete.EntityFramework
                 return result.ToList();
             }
         }
+
+        public List<EmployeesFullNameDto> GetEmployeesFullNameDto()
+        {
+            using (var context = new TechinalServiceContext())
+            {
+                var result = from e in context.Employees
+                    select new EmployeesFullNameDto
+                    {
+                        EmployeeId = e.EmployeeId,
+                        EmployeeFullName = e.FirstName +" "+e.LastName
+                    };
+                return result.ToList();
+            }
+        }
     }
 }

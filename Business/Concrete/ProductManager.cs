@@ -24,6 +24,11 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        public IDataResult<List<Product>> GetAllByDistinctProductName()
+        {
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll().DistinctBy(p => p.ProductName).ToList());
+        }
+
         public IResult Add(Product product)
         {
              ValidationTool.Validate(new ProductValidator(),product);

@@ -14,6 +14,6 @@ namespace DataAccess.Abstract
 
         List<CustomerDetailDto> GetCustomerDetailDto();
         List<CustomerCityStatisticsDto> GetCustomerCityStatisticsDto();
-
+        List<CustomersFullNameDto> GetCustomersFullNameDto();
     }
 }

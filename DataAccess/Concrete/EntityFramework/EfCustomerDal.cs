@@ -31,6 +31,20 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
+        public List<CustomersFullNameDto> GetCustomersFullNameDto()
+        {
+            using (var context = new TechinalServiceContext())
+            {
+                var result = from c in context.Customers
+                    select new CustomersFullNameDto
+                    {
+                        CustomerId = c.CustomerId,
+                        CustomerFullName = c.FirstName+" "+c.LastName
+                    };
+                return result.ToList();
+            }
+        }
+
         public List<CustomerDetailDto> GetCustomerDetailDto()
         {
             using (var context = new TechinalServiceContext())

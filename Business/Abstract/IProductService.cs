@@ -23,6 +23,7 @@ namespace Business.Abstract
         IDataResult<int> GetTotalWhiteGoodsStockNumber(int categoryId);
         IDataResult<int> GetTotalComputerStockNumber(int categoryId);
         IDataResult<int> GetTotalSmallAppliancesStockNumber(int categoryId);
+        IDataResult<List<Product>> GetAllByDistinctProductName();
         IResult Add(Product product);
         IResult Update(Product product);
         IResult Delete(Product product);
