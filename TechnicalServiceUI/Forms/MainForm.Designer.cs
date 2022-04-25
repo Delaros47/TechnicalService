@@ -40,7 +40,7 @@
             this.barBtnBrandStatistics = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnNewMalfunction = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnMalfunctionProducts = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnMalfunctionProductTracking = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnNewQRCode = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnNewBarcode = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnNewCustomer = new DevExpress.XtraBars.BarButtonItem();
@@ -122,7 +122,7 @@
             this.barBtnBrandStatistics,
             this.barBtnNewMalfunction,
             this.barBtnMalfunctionProducts,
-            this.barButtonItem3,
+            this.barBtnMalfunctionProductTracking,
             this.barBtnNewQRCode,
             this.barBtnNewBarcode,
             this.barBtnNewCustomer,
@@ -244,12 +244,12 @@
             this.barBtnMalfunctionProducts.Name = "barBtnMalfunctionProducts";
             this.barBtnMalfunctionProducts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnMalfunctionProducts_ItemClick);
             // 
-            // barButtonItem3
+            // barBtnMalfunctionProductTracking
             // 
-            this.barButtonItem3.Caption = "Malfunction Details";
-            this.barButtonItem3.Id = 10;
-            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.barBtnMalfunctionProductTracking.Caption = "Malfunction Product Tracking";
+            this.barBtnMalfunctionProductTracking.Id = 10;
+            this.barBtnMalfunctionProductTracking.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnProductTracking.ImageOptions.SvgImage")));
+            this.barBtnMalfunctionProductTracking.Name = "barBtnMalfunctionProductTracking";
             // 
             // barBtnNewQRCode
             // 
@@ -552,7 +552,7 @@
             // 
             this.ribbonPageGroupMalfunctions.ItemLinks.Add(this.barBtnNewMalfunction);
             this.ribbonPageGroupMalfunctions.ItemLinks.Add(this.barBtnMalfunctionProducts);
-            this.ribbonPageGroupMalfunctions.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroupMalfunctions.ItemLinks.Add(this.barBtnMalfunctionProductTracking);
             this.ribbonPageGroupMalfunctions.Name = "ribbonPageGroupMalfunctions";
             this.ribbonPageGroupMalfunctions.Text = "Malfunctions";
             // 
@@ -771,7 +771,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupStatistics;
         private DevExpress.XtraBars.BarButtonItem barBtnNewMalfunction;
         private DevExpress.XtraBars.BarButtonItem barBtnMalfunctionProducts;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barBtnMalfunctionProductTracking;
         private DevExpress.XtraBars.BarButtonItem barBtnNewQRCode;
         private DevExpress.XtraBars.BarButtonItem barBtnNewBarcode;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupMalfunctions;

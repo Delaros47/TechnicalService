@@ -10,10 +10,10 @@ namespace Entities.Concrete
     public class Tracking:IEntity
     {
         public int TrackingId { get; set; }
-        public string TrackingNumber { get; set; }
-        public string Status { get; set; }
+        public string Description { get; set; }
         public DateTime Date { get; set; }
-        public int ProductId { get; set; }
+        public string ProductSeriesNumber { get; set; }
+
 
 
     }
