@@ -62,7 +62,7 @@ namespace TechnicalServiceUI.Forms
         {
             var result = _productSaleService.Add(new ProductSale
             {
-                Price = Convert.ToInt32(txtPrice.Text),
+                Price = Convert.ToDecimal(txtPrice.Text),
                 ProductSeriesNumber = txtProductSeriesNumber.Text,
                 SalesDate = Convert.ToDateTime(deSalesDate.Text),
                 Unit = Convert.ToInt32(txtUnit.Text),
