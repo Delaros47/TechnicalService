@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MessagingToolkit.QRCode.Codec;
 
 namespace TechnicalServiceUI.Forms
 {
@@ -16,6 +17,12 @@ namespace TechnicalServiceUI.Forms
         public QRCodeAddForm()
         {
             InitializeComponent();
+        }
+
+        private void btnCreateQRCode_Click(object sender, EventArgs e)
+        {
+            QRCodeEncoder encoder = new QRCodeEncoder();
+            pictureEditQRCode.Image = encoder.Encode(txtProductSeriesNumber.Text);
         }
     }
 }

@@ -259,6 +259,7 @@
             this.barBtnNewQRCode.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnNewQRCode.ImageOptions.Image")));
             this.barBtnNewQRCode.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnNewQRCode.ImageOptions.LargeImage")));
             this.barBtnNewQRCode.Name = "barBtnNewQRCode";
+            this.barBtnNewQRCode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnNewQRCode_ItemClick);
             // 
             // barBtnNewBarcode
             // 

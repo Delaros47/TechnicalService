@@ -37,6 +37,7 @@ namespace TechnicalServiceUI.Forms
         private ProductSalesAddForm _productSalesAddForm;
         private ProductAcceptanceAddForm _productAcceptanceAddForm;
         private MalfunctionTrackingsForm _malfunctionTrackingsForm;
+        private QRCodeAddForm _qrCodeAddForm;
 
         public MainForm()
         {
@@ -288,6 +289,15 @@ namespace TechnicalServiceUI.Forms
                 _malfunctionTrackingsForm = new MalfunctionTrackingsForm();
                 _malfunctionTrackingsForm.MdiParent = this;
                 _malfunctionTrackingsForm.Show();
+            }
+        }
+
+        private void barBtnNewQRCode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_qrCodeAddForm==null || _qrCodeAddForm.IsDisposed)
+            {
+                _qrCodeAddForm = new QRCodeAddForm();
+                _qrCodeAddForm.Show();
             }
         }
     }
