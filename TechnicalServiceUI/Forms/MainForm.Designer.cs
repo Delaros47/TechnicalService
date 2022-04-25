@@ -74,6 +74,7 @@
             this.barBtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.barbtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.btnBtnProductSales = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnInvoices = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageMainForm = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupMainForm = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -155,9 +156,10 @@
             this.barBtnBanks,
             this.barBtnWord,
             this.barbtnNewProductSales,
-            this.btnBtnProductSales});
+            this.btnBtnProductSales,
+            this.barBtnInvoices});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 46;
+            this.ribbonControl1.MaxItemId = 47;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageMainForm,
@@ -504,6 +506,13 @@
             this.btnBtnProductSales.Name = "btnBtnProductSales";
             this.btnBtnProductSales.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBtnProductSales_ItemClick);
             // 
+            // barBtnInvoices
+            // 
+            this.barBtnInvoices.Caption = "Invoices";
+            this.barBtnInvoices.Id = 46;
+            this.barBtnInvoices.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barBtnInvoices.Name = "barBtnInvoices";
+            // 
             // ribbonPageMainForm
             // 
             this.ribbonPageMainForm.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -658,6 +667,7 @@
             this.ribbonPageGroupInvoices.ItemLinks.Add(this.barBtnDetailedInvoiceSearch);
             this.ribbonPageGroupInvoices.ItemLinks.Add(this.barBtnPassiveInvoice);
             this.ribbonPageGroupInvoices.ItemLinks.Add(this.barBtnInvoicePdf);
+            this.ribbonPageGroupInvoices.ItemLinks.Add(this.barBtnInvoices);
             this.ribbonPageGroupInvoices.Name = "ribbonPageGroupInvoices";
             this.ribbonPageGroupInvoices.Text = "Invoices";
             // 
@@ -822,5 +832,6 @@
         private DevExpress.XtraBars.BarButtonItem barbtnNewProductSales;
         private DevExpress.XtraBars.BarButtonItem btnBtnProductSales;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupProductSales;
+        private DevExpress.XtraBars.BarButtonItem barBtnInvoices;
     }
 }
