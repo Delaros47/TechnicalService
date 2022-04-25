@@ -45,6 +45,8 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<ProductAcceptanceManager>().As<IProductAcceptanceService>().SingleInstance();
             builder.RegisterType<EfProductAcceptanceDal>().As<IProductAcceptanceDal>().SingleInstance();
 
+            builder.RegisterType<ProductSaleManager>().As<IProductSaleService>().SingleInstance();
+            builder.RegisterType<EfProductSaleDal>().As<IProductSaleDal>().SingleInstance();
 
         }
     }

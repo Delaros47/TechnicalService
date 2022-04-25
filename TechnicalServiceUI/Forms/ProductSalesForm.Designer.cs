@@ -179,6 +179,7 @@
             this.Controls.Add(this.gridControlProductSales);
             this.Name = "ProductSalesForm";
             this.Text = "Product Sales";
+            this.Load += new System.EventHandler(this.ProductSalesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProductSales)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductSales)).EndInit();
             this.ResumeLayout(false);
