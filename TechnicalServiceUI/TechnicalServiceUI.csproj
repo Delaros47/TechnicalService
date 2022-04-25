@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="devexpress.win.design" Version="21.2.3" />
+    <PackageReference Include="MessagingToolkit.QRCode" Version="1.3.0" />
   </ItemGroup>
 
   <ItemGroup>

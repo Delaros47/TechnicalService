@@ -90,5 +90,13 @@ namespace TechnicalServiceUI.Forms
                 GetAllMalfunctionTrackings();
             }
         }
+
+        private void btnClearMalfunctionTrackings_Click(object sender, EventArgs e)
+        {
+            txtTrackingId.Text = "";
+            txtProductSeriesNumber.Text = "";
+            memoDescription.Text = "";
+            deTrackingDate.Text = "";
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace TechnicalServiceUI.Forms
         private ProductSalesForm _productSalesForm;
         private ProductSalesAddForm _productSalesAddForm;
         private ProductAcceptanceAddForm _productAcceptanceAddForm;
+        private MalfunctionTrackingsForm _malfunctionTrackingsForm;
 
         public MainForm()
         {
@@ -277,6 +278,16 @@ namespace TechnicalServiceUI.Forms
             {
                 _productAcceptanceAddForm = new ProductAcceptanceAddForm();
                 _productAcceptanceAddForm.Show();
+            }
+        }
+
+        private void barBtnMalfunctionProductTracking_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_malfunctionTrackingsForm==null || _malfunctionTrackingsForm.IsDisposed)
+            {
+                _malfunctionTrackingsForm = new MalfunctionTrackingsForm();
+                _malfunctionTrackingsForm.MdiParent = this;
+                _malfunctionTrackingsForm.Show();
             }
         }
     }

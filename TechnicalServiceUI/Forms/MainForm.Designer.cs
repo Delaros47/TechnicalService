@@ -248,8 +248,9 @@
             // 
             this.barBtnMalfunctionProductTracking.Caption = "Malfunction Product Tracking";
             this.barBtnMalfunctionProductTracking.Id = 10;
-            this.barBtnMalfunctionProductTracking.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnProductTracking.ImageOptions.SvgImage")));
+            this.barBtnMalfunctionProductTracking.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnMalfunctionProductTracking.ImageOptions.SvgImage")));
             this.barBtnMalfunctionProductTracking.Name = "barBtnMalfunctionProductTracking";
+            this.barBtnMalfunctionProductTracking.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnMalfunctionProductTracking_ItemClick);
             // 
             // barBtnNewQRCode
             // 

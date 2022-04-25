@@ -195,6 +195,7 @@
             this.btnClearMalfunctionTrackings.Size = new System.Drawing.Size(188, 23);
             this.btnClearMalfunctionTrackings.TabIndex = 3;
             this.btnClearMalfunctionTrackings.Text = "Clear All";
+            this.btnClearMalfunctionTrackings.Click += new System.EventHandler(this.btnClearMalfunctionTrackings_Click);
             // 
             // btnUpdateMalfunctionTracking
             // 
@@ -287,6 +288,7 @@
             this.txtTrackingId.Name = "txtTrackingId";
             this.txtTrackingId.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTrackingId.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtTrackingId.Properties.ReadOnly = true;
             this.txtTrackingId.Size = new System.Drawing.Size(188, 20);
             this.txtTrackingId.StyleController = this.myDataLayoutControl1;
             this.txtTrackingId.TabIndex = 4;
