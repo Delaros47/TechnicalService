@@ -111,7 +111,7 @@
             // colCustomerName
             // 
             this.colCustomerName.Caption = "Customer Name";
-            this.colCustomerName.FieldName = "CustomerName";
+            this.colCustomerName.FieldName = "CustomerFullName";
             this.colCustomerName.Name = "colCustomerName";
             this.colCustomerName.OptionsColumn.AllowEdit = false;
             this.colCustomerName.Visible = true;
@@ -121,7 +121,7 @@
             // colEmployeeId
             // 
             this.colEmployeeId.Caption = "Employee Name";
-            this.colEmployeeId.FieldName = "EmployeeName";
+            this.colEmployeeId.FieldName = "EmployeeFullName";
             this.colEmployeeId.Name = "colEmployeeId";
             this.colEmployeeId.OptionsColumn.AllowEdit = false;
             this.colEmployeeId.Visible = true;

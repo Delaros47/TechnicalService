@@ -87,7 +87,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(420, 297);
+            this.panelControl1.Size = new System.Drawing.Size(398, 297);
             this.panelControl1.TabIndex = 0;
             // 
             // btnClearProductSales
@@ -95,7 +95,7 @@
             this.btnClearProductSales.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnClearProductSales.Appearance.Options.UseForeColor = true;
             this.btnClearProductSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnClearProductSales.ImageOptions.SvgImage")));
-            this.btnClearProductSales.Location = new System.Drawing.Point(272, 222);
+            this.btnClearProductSales.Location = new System.Drawing.Point(248, 222);
             this.btnClearProductSales.Name = "btnClearProductSales";
             this.btnClearProductSales.Size = new System.Drawing.Size(136, 46);
             this.btnClearProductSales.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.btnAddProductSale.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.btnAddProductSale.Appearance.Options.UseForeColor = true;
             this.btnAddProductSale.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddProductSale.ImageOptions.SvgImage")));
-            this.btnAddProductSale.Location = new System.Drawing.Point(120, 222);
+            this.btnAddProductSale.Location = new System.Drawing.Point(84, 222);
             this.btnAddProductSale.Name = "btnAddProductSale";
             this.btnAddProductSale.Size = new System.Drawing.Size(136, 46);
             this.btnAddProductSale.TabIndex = 1;
@@ -128,7 +128,7 @@
             this.myDataLayoutControl1.Name = "myDataLayoutControl1";
             this.myDataLayoutControl1.OptionsFocus.EnableAutoTabOrder = false;
             this.myDataLayoutControl1.Root = this.Root;
-            this.myDataLayoutControl1.Size = new System.Drawing.Size(416, 214);
+            this.myDataLayoutControl1.Size = new System.Drawing.Size(394, 214);
             this.myDataLayoutControl1.TabIndex = 0;
             this.myDataLayoutControl1.Text = "myDataLayoutControl1";
             // 
@@ -139,7 +139,7 @@
             this.txtProductSeriesNumber.Name = "txtProductSeriesNumber";
             this.txtProductSeriesNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtProductSeriesNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtProductSeriesNumber.Size = new System.Drawing.Size(271, 20);
+            this.txtProductSeriesNumber.Size = new System.Drawing.Size(249, 20);
             this.txtProductSeriesNumber.StyleController = this.myDataLayoutControl1;
             this.txtProductSeriesNumber.TabIndex = 10;
             // 
@@ -151,8 +151,9 @@
             this.txtPrice.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPrice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPrice.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPrice.Properties.Mask.EditMask = "c";
             this.txtPrice.Properties.MaskSettings.Set("mask", "c");
-            this.txtPrice.Size = new System.Drawing.Size(271, 20);
+            this.txtPrice.Size = new System.Drawing.Size(249, 20);
             this.txtPrice.StyleController = this.myDataLayoutControl1;
             this.txtPrice.TabIndex = 9;
             // 
@@ -163,7 +164,7 @@
             this.txtUnit.Name = "txtUnit";
             this.txtUnit.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtUnit.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtUnit.Size = new System.Drawing.Size(271, 20);
+            this.txtUnit.Size = new System.Drawing.Size(249, 20);
             this.txtUnit.StyleController = this.myDataLayoutControl1;
             this.txtUnit.TabIndex = 8;
             // 
@@ -182,7 +183,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.deSalesDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.deSalesDate.Size = new System.Drawing.Size(271, 20);
+            this.deSalesDate.Size = new System.Drawing.Size(249, 20);
             this.deSalesDate.StyleController = this.myDataLayoutControl1;
             this.deSalesDate.TabIndex = 7;
             // 
@@ -199,7 +200,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EmployeeId", "Employee ID"),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EmployeeFullName", "Employee Full Name")});
             this.lueEmployeeName.Properties.NullText = "";
-            this.lueEmployeeName.Size = new System.Drawing.Size(271, 20);
+            this.lueEmployeeName.Size = new System.Drawing.Size(249, 20);
             this.lueEmployeeName.StyleController = this.myDataLayoutControl1;
             this.lueEmployeeName.TabIndex = 6;
             // 
@@ -216,7 +217,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CustomerId", "Customer ID"),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CustomerFullName", "Customer Full Name")});
             this.lueCustomerName.Properties.NullText = "";
-            this.lueCustomerName.Size = new System.Drawing.Size(271, 20);
+            this.lueCustomerName.Size = new System.Drawing.Size(249, 20);
             this.lueCustomerName.StyleController = this.myDataLayoutControl1;
             this.lueCustomerName.TabIndex = 5;
             // 
@@ -233,7 +234,7 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProductId", "Product ID"),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProductName", "Product Name")});
             this.lueProductName.Properties.NullText = "";
-            this.lueProductName.Size = new System.Drawing.Size(271, 20);
+            this.lueProductName.Size = new System.Drawing.Size(249, 20);
             this.lueProductName.StyleController = this.myDataLayoutControl1;
             this.lueProductName.TabIndex = 4;
             // 
@@ -280,7 +281,7 @@
             rowDefinition6,
             rowDefinition7,
             rowDefinition8});
-            this.Root.Size = new System.Drawing.Size(416, 214);
+            this.Root.Size = new System.Drawing.Size(394, 214);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -290,7 +291,7 @@
             this.layoutControlItem1.Control = this.lueProductName;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem1.Text = "Product Name";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -302,7 +303,7 @@
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.OptionsTableLayoutItem.RowIndex = 1;
-            this.layoutControlItem2.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem2.Text = "Customer Name";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -314,7 +315,7 @@
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem3.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem3.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem3.Text = "Employee Name";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -326,7 +327,7 @@
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 3;
-            this.layoutControlItem4.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem4.Text = "Sales Date";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -338,7 +339,7 @@
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.OptionsTableLayoutItem.RowIndex = 4;
-            this.layoutControlItem5.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem5.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem5.Text = "Unit";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -350,7 +351,7 @@
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.OptionsTableLayoutItem.RowIndex = 5;
-            this.layoutControlItem6.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem6.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem6.Text = "Price";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -362,7 +363,7 @@
             this.layoutControlItem7.Location = new System.Drawing.Point(0, 144);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.OptionsTableLayoutItem.RowIndex = 6;
-            this.layoutControlItem7.Size = new System.Drawing.Size(396, 24);
+            this.layoutControlItem7.Size = new System.Drawing.Size(374, 24);
             this.layoutControlItem7.Text = "Product Series Number";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(109, 13);
             // 
@@ -370,7 +371,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 297);
+            this.ClientSize = new System.Drawing.Size(398, 297);
             this.Controls.Add(this.panelControl1);
             this.Name = "ProductSalesAddForm";
             this.Text = "Add Product Sales";

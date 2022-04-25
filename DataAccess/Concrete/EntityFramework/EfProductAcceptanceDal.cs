@@ -28,8 +28,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  ArrivalDate = p.ArrivalDate,
                                  LeftDate = p.LeftDate,
                                  ProductSeriesNumber = p.ProductSeriesNumber,
-                                 CustomerFullName = c.FirstName+c.LastName,
-                                 EmployeeFullName = e.FirstName+e.LastName
+                                 CustomerFullName = c.FirstName+" "+c.LastName,
+                                 EmployeeFullName = e.FirstName+" "+e.LastName
                              };
                 return result.ToList();
 

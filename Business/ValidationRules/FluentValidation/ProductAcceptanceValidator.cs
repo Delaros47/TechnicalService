@@ -17,7 +17,6 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(p => p.CustomerId).NotEmpty().WithMessage("Customer name cannot be empty");
             RuleFor(p => p.ProductSeriesNumber).NotEmpty().WithMessage("Product Series Number cannot be empty");
             RuleFor(p => p.ArrivalDate).NotEmpty().WithMessage("Arrival date cannot be empty");
-            RuleFor(p => p.LeftDate).NotEmpty().WithMessage("Left date cannot be empty");
 
         }
     }

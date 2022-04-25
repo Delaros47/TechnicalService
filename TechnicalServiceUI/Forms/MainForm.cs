@@ -35,6 +35,7 @@ namespace TechnicalServiceUI.Forms
         private ProductAcceptancesForm _productAcceptancesForm;
         private ProductSalesForm _productSalesForm;
         private ProductSalesAddForm _productSalesAddForm;
+        private ProductAcceptanceAddForm _productAcceptanceAddForm;
 
         public MainForm()
         {
@@ -267,6 +268,15 @@ namespace TechnicalServiceUI.Forms
             {
                 _productSalesAddForm = new ProductSalesAddForm();
                 _productSalesAddForm.Show();
+            }
+        }
+
+        private void barBtnNewMalfunction_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_productAcceptanceAddForm==null || _productAcceptanceAddForm.IsDisposed)
+            {
+                _productAcceptanceAddForm = new ProductAcceptanceAddForm();
+                _productAcceptanceAddForm.Show();
             }
         }
     }

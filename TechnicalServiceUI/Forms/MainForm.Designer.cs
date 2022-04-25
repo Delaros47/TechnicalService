@@ -234,6 +234,7 @@
             this.barBtnNewMalfunction.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnNewMalfunction.ImageOptions.Image")));
             this.barBtnNewMalfunction.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnNewMalfunction.ImageOptions.LargeImage")));
             this.barBtnNewMalfunction.Name = "barBtnNewMalfunction";
+            this.barBtnNewMalfunction.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnNewMalfunction_ItemClick);
             // 
             // barBtnMalfunctionProducts
             // 
@@ -732,6 +733,7 @@
             this.ClientSize = new System.Drawing.Size(1298, 718);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
+            this.MaximumSize = new System.Drawing.Size(1300, 750);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Technical Service";
