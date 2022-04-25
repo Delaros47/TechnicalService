@@ -28,5 +28,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<ProductSale> ProductSales { get; set; }
 
 
+
+
     }
 }
