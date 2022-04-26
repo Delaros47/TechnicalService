@@ -311,5 +311,10 @@ namespace TechnicalServiceUI.Forms
                 _invoicesForm.Show();
             }
         }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,10 +17,4 @@
     <ProjectReference Include="..\Universal\Universal.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="DevExpress.XtraEditors.v21.2">
-      
-    </Reference>
-  </ItemGroup>
-
 </Project>

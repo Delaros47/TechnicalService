@@ -29,17 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoicesForm));
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition3 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition17 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition18 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition19 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition20 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition21 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition22 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition23 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition24 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
             this.gridControlInvoices = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewInvoices = new TechnicalServiceUI.Controls.MyGridView();
+            this.colInvoiceId = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colInvoiceSerialNumber = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colInvoiceOrderNumber = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colInvoiceDate = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colTaxOffice = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colCustomerFullName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colEmployeeFullName = new TechnicalServiceUI.Controls.MyGridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnDeleteInvoice = new TechnicalServiceUI.Controls.MySimpleButton();
             this.btnUpdateInvoice = new TechnicalServiceUI.Controls.MySimpleButton();
@@ -61,9 +68,6 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.myGridColumn1 = new TechnicalServiceUI.Controls.MyGridColumn();
-            this.myGridColumn2 = new TechnicalServiceUI.Controls.MyGridColumn();
-            this.myGridColumn3 = new TechnicalServiceUI.Controls.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -112,9 +116,13 @@
             this.gridViewInvoices.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewInvoices.Appearance.ViewCaption.Options.UseForeColor = true;
             this.gridViewInvoices.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.myGridColumn1,
-            this.myGridColumn2,
-            this.myGridColumn3});
+            this.colInvoiceId,
+            this.colInvoiceSerialNumber,
+            this.colInvoiceOrderNumber,
+            this.colInvoiceDate,
+            this.colTaxOffice,
+            this.colCustomerFullName,
+            this.colEmployeeFullName});
             this.gridViewInvoices.GridControl = this.gridControlInvoices;
             this.gridViewInvoices.Name = "gridViewInvoices";
             this.gridViewInvoices.OptionsMenu.EnableColumnMenu = false;
@@ -131,6 +139,76 @@
             this.gridViewInvoices.OptionsView.ShowGroupPanel = false;
             this.gridViewInvoices.OptionsView.ShowViewCaption = true;
             this.gridViewInvoices.ViewCaption = "Invoices";
+            this.gridViewInvoices.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewInvoices_FocusedRowChanged);
+            // 
+            // colInvoiceId
+            // 
+            this.colInvoiceId.Caption = "Invoice ID";
+            this.colInvoiceId.FieldName = "InvoiceId";
+            this.colInvoiceId.Name = "colInvoiceId";
+            this.colInvoiceId.OptionsColumn.AllowEdit = false;
+            this.colInvoiceId.Visible = true;
+            this.colInvoiceId.VisibleIndex = 0;
+            // 
+            // colInvoiceSerialNumber
+            // 
+            this.colInvoiceSerialNumber.Caption = "Invoice Serial Number";
+            this.colInvoiceSerialNumber.FieldName = "InvoiceSerialNumber";
+            this.colInvoiceSerialNumber.Name = "colInvoiceSerialNumber";
+            this.colInvoiceSerialNumber.OptionsColumn.AllowEdit = false;
+            this.colInvoiceSerialNumber.Visible = true;
+            this.colInvoiceSerialNumber.VisibleIndex = 1;
+            this.colInvoiceSerialNumber.Width = 125;
+            // 
+            // colInvoiceOrderNumber
+            // 
+            this.colInvoiceOrderNumber.Caption = "InvoiceOrderNumber";
+            this.colInvoiceOrderNumber.FieldName = "InvoiceOrderNumber";
+            this.colInvoiceOrderNumber.Name = "colInvoiceOrderNumber";
+            this.colInvoiceOrderNumber.OptionsColumn.AllowEdit = false;
+            this.colInvoiceOrderNumber.Visible = true;
+            this.colInvoiceOrderNumber.VisibleIndex = 2;
+            this.colInvoiceOrderNumber.Width = 150;
+            // 
+            // colInvoiceDate
+            // 
+            this.colInvoiceDate.Caption = "Invoice Date";
+            this.colInvoiceDate.FieldName = "InvoiceDate";
+            this.colInvoiceDate.Name = "colInvoiceDate";
+            this.colInvoiceDate.OptionsColumn.AllowEdit = false;
+            this.colInvoiceDate.Visible = true;
+            this.colInvoiceDate.VisibleIndex = 3;
+            this.colInvoiceDate.Width = 125;
+            // 
+            // colTaxOffice
+            // 
+            this.colTaxOffice.Caption = "Invoice Office";
+            this.colTaxOffice.FieldName = "TaxOffice";
+            this.colTaxOffice.Name = "colTaxOffice";
+            this.colTaxOffice.OptionsColumn.AllowEdit = false;
+            this.colTaxOffice.Visible = true;
+            this.colTaxOffice.VisibleIndex = 4;
+            this.colTaxOffice.Width = 150;
+            // 
+            // colCustomerFullName
+            // 
+            this.colCustomerFullName.Caption = "Customer Full Name";
+            this.colCustomerFullName.FieldName = "CustomerFullName";
+            this.colCustomerFullName.Name = "colCustomerFullName";
+            this.colCustomerFullName.OptionsColumn.AllowEdit = false;
+            this.colCustomerFullName.Visible = true;
+            this.colCustomerFullName.VisibleIndex = 5;
+            this.colCustomerFullName.Width = 150;
+            // 
+            // colEmployeeFullName
+            // 
+            this.colEmployeeFullName.Caption = "Employee Full Name";
+            this.colEmployeeFullName.FieldName = "EmployeeFullName";
+            this.colEmployeeFullName.Name = "colEmployeeFullName";
+            this.colEmployeeFullName.OptionsColumn.AllowEdit = false;
+            this.colEmployeeFullName.Visible = true;
+            this.colEmployeeFullName.VisibleIndex = 6;
+            this.colEmployeeFullName.Width = 150;
             // 
             // panelControl1
             // 
@@ -155,6 +233,7 @@
             this.btnDeleteInvoice.Size = new System.Drawing.Size(116, 41);
             this.btnDeleteInvoice.TabIndex = 4;
             this.btnDeleteInvoice.Text = "Delete Invoice";
+            this.btnDeleteInvoice.Click += new System.EventHandler(this.btnDeleteInvoice_Click);
             // 
             // btnUpdateInvoice
             // 
@@ -166,6 +245,7 @@
             this.btnUpdateInvoice.Size = new System.Drawing.Size(116, 41);
             this.btnUpdateInvoice.TabIndex = 3;
             this.btnUpdateInvoice.Text = "Update Invoice";
+            this.btnUpdateInvoice.Click += new System.EventHandler(this.btnUpdateInvoice_Click);
             // 
             // btnClearInvoices
             // 
@@ -177,6 +257,7 @@
             this.btnClearInvoices.Size = new System.Drawing.Size(116, 41);
             this.btnClearInvoices.TabIndex = 2;
             this.btnClearInvoices.Text = "Clear Invoices";
+            this.btnClearInvoices.Click += new System.EventHandler(this.btnClearInvoices_Click);
             // 
             // btnAddInvoice
             // 
@@ -188,6 +269,7 @@
             this.btnAddInvoice.Size = new System.Drawing.Size(116, 41);
             this.btnAddInvoice.TabIndex = 1;
             this.btnAddInvoice.Text = "Add Invoice";
+            this.btnAddInvoice.Click += new System.EventHandler(this.btnAddInvoice_Click);
             // 
             // myDataLayoutControl1
             // 
@@ -216,6 +298,9 @@
             this.lueEmployeeName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.lueEmployeeName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueEmployeeName.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EmployeeId", "Employee ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("EmployeeFullName", "Employee Full Name")});
             this.lueEmployeeName.Properties.NullText = "";
             this.lueEmployeeName.Size = new System.Drawing.Size(177, 20);
             this.lueEmployeeName.StyleController = this.myDataLayoutControl1;
@@ -230,6 +315,9 @@
             this.lueCustomerName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.lueCustomerName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueCustomerName.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CustomerId", "Customer ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CustomerFullName", "Customer Full Name")});
             this.lueCustomerName.Properties.NullText = "";
             this.lueCustomerName.Size = new System.Drawing.Size(177, 20);
             this.lueCustomerName.StyleController = this.myDataLayoutControl1;
@@ -294,6 +382,7 @@
             this.txtInvoiceInfoId.Name = "txtInvoiceInfoId";
             this.txtInvoiceInfoId.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtInvoiceInfoId.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtInvoiceInfoId.Properties.ReadOnly = true;
             this.txtInvoiceInfoId.Size = new System.Drawing.Size(177, 20);
             this.txtInvoiceInfoId.StyleController = this.myDataLayoutControl1;
             this.txtInvoiceInfoId.TabIndex = 4;
@@ -312,35 +401,35 @@
             this.layoutControlItem7});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition3.Width = 200D;
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 200D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition3});
-            rowDefinition17.Height = 24D;
-            rowDefinition17.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition18.Height = 24D;
-            rowDefinition18.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition19.Height = 24D;
-            rowDefinition19.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition20.Height = 24D;
-            rowDefinition20.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition21.Height = 24D;
-            rowDefinition21.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition22.Height = 24D;
-            rowDefinition22.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition23.Height = 24D;
-            rowDefinition23.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition24.Height = 24D;
-            rowDefinition24.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1});
+            rowDefinition1.Height = 24D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition2.Height = 24D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition3.Height = 24D;
+            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition4.Height = 24D;
+            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition5.Height = 24D;
+            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition6.Height = 24D;
+            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition7.Height = 24D;
+            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition8.Height = 24D;
+            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition17,
-            rowDefinition18,
-            rowDefinition19,
-            rowDefinition20,
-            rowDefinition21,
-            rowDefinition22,
-            rowDefinition23,
-            rowDefinition24});
+            rowDefinition1,
+            rowDefinition2,
+            rowDefinition3,
+            rowDefinition4,
+            rowDefinition5,
+            rowDefinition6,
+            rowDefinition7,
+            rowDefinition8});
             this.Root.Size = new System.Drawing.Size(319, 228);
             this.Root.TextVisible = false;
             // 
@@ -427,30 +516,6 @@
             this.layoutControlItem7.Text = "Employee Name";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(106, 13);
             // 
-            // myGridColumn1
-            // 
-            this.myGridColumn1.Caption = "myGridColumn1";
-            this.myGridColumn1.Name = "myGridColumn1";
-            this.myGridColumn1.OptionsColumn.AllowEdit = false;
-            this.myGridColumn1.Visible = true;
-            this.myGridColumn1.VisibleIndex = 0;
-            // 
-            // myGridColumn2
-            // 
-            this.myGridColumn2.Caption = "myGridColumn2";
-            this.myGridColumn2.Name = "myGridColumn2";
-            this.myGridColumn2.OptionsColumn.AllowEdit = false;
-            this.myGridColumn2.Visible = true;
-            this.myGridColumn2.VisibleIndex = 1;
-            // 
-            // myGridColumn3
-            // 
-            this.myGridColumn3.Caption = "myGridColumn3";
-            this.myGridColumn3.Name = "myGridColumn3";
-            this.myGridColumn3.OptionsColumn.AllowEdit = false;
-            this.myGridColumn3.Visible = true;
-            this.myGridColumn3.VisibleIndex = 2;
-            // 
             // InvoicesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -512,8 +577,12 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private Controls.MyGridColumn myGridColumn1;
-        private Controls.MyGridColumn myGridColumn2;
-        private Controls.MyGridColumn myGridColumn3;
+        private Controls.MyGridColumn colInvoiceId;
+        private Controls.MyGridColumn colInvoiceSerialNumber;
+        private Controls.MyGridColumn colInvoiceOrderNumber;
+        private Controls.MyGridColumn colInvoiceDate;
+        private Controls.MyGridColumn colTaxOffice;
+        private Controls.MyGridColumn colCustomerFullName;
+        private Controls.MyGridColumn colEmployeeFullName;
     }
 }

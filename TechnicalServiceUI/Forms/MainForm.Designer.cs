@@ -173,6 +173,7 @@
             this.ribbonPageTools,
             this.ribbonPageContact});
             this.ribbonControl1.Size = new System.Drawing.Size(1298, 153);
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // barBtnNewCategory
             // 
