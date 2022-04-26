@@ -28,208 +28,213 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.myGridControl1 = new TechnicalServiceUI.Controls.MyGridControl();
-            this.myGridView1 = new TechnicalServiceUI.Controls.MyGridView();
-            this.myGridControl2 = new TechnicalServiceUI.Controls.MyGridControl();
-            this.myGridView2 = new TechnicalServiceUI.Controls.MyGridView();
-            this.myGridControl3 = new TechnicalServiceUI.Controls.MyGridControl();
-            this.myGridView3 = new TechnicalServiceUI.Controls.MyGridView();
-            this.myGridControl4 = new TechnicalServiceUI.Controls.MyGridControl();
-            this.myGridView4 = new TechnicalServiceUI.Controls.MyGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView4)).BeginInit();
+            this.gridControlProducts = new TechnicalServiceUI.Controls.MyGridControl();
+            this.gridViewProducts = new TechnicalServiceUI.Controls.MyGridView();
+            this.gridControlDepartments = new TechnicalServiceUI.Controls.MyGridControl();
+            this.gridViewDepartments = new TechnicalServiceUI.Controls.MyGridView();
+            this.gridControlBrands = new TechnicalServiceUI.Controls.MyGridControl();
+            this.gridViewBrands = new TechnicalServiceUI.Controls.MyGridView();
+            this.gridControlCategories = new TechnicalServiceUI.Controls.MyGridControl();
+            this.gridViewCategories = new TechnicalServiceUI.Controls.MyGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlProducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewProducts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlDepartments)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDepartments)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlBrands)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBrands)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCategories)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCategories)).BeginInit();
             this.SuspendLayout();
             // 
-            // myGridControl1
+            // gridControlProducts
             // 
-            this.myGridControl1.Location = new System.Drawing.Point(12, 17);
-            this.myGridControl1.MainView = this.myGridView1;
-            this.myGridControl1.Name = "myGridControl1";
-            this.myGridControl1.Size = new System.Drawing.Size(630, 250);
-            this.myGridControl1.TabIndex = 0;
-            this.myGridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.myGridView1});
+            this.gridControlProducts.Location = new System.Drawing.Point(12, 17);
+            this.gridControlProducts.MainView = this.gridViewProducts;
+            this.gridControlProducts.Name = "gridControlProducts";
+            this.gridControlProducts.Size = new System.Drawing.Size(630, 250);
+            this.gridControlProducts.TabIndex = 0;
+            this.gridControlProducts.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewProducts});
             // 
-            // myGridView1
+            // gridViewProducts
             // 
-            this.myGridView1.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.myGridView1.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView1.Appearance.FooterPanel.Options.UseFont = true;
-            this.myGridView1.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.myGridView1.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView1.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.myGridView1.GridControl = this.myGridControl1;
-            this.myGridView1.Name = "myGridView1";
-            this.myGridView1.OptionsMenu.EnableColumnMenu = false;
-            this.myGridView1.OptionsMenu.EnableFooterMenu = false;
-            this.myGridView1.OptionsMenu.EnableGroupPanelMenu = false;
-            this.myGridView1.OptionsNavigation.EnterMoveNextColumn = true;
-            this.myGridView1.OptionsPrint.AutoWidth = false;
-            this.myGridView1.OptionsPrint.PrintFooter = false;
-            this.myGridView1.OptionsPrint.PrintGroupFooter = false;
-            this.myGridView1.OptionsView.ColumnAutoWidth = false;
-            this.myGridView1.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.myGridView1.OptionsView.RowAutoHeight = true;
-            this.myGridView1.OptionsView.ShowAutoFilterRow = true;
-            this.myGridView1.OptionsView.ShowGroupPanel = false;
-            this.myGridView1.OptionsView.ShowViewCaption = true;
+            this.gridViewProducts.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewProducts.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewProducts.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewProducts.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewProducts.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewProducts.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewProducts.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewProducts.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewProducts.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewProducts.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewProducts.GridControl = this.gridControlProducts;
+            this.gridViewProducts.Name = "gridViewProducts";
+            this.gridViewProducts.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewProducts.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewProducts.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewProducts.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewProducts.OptionsPrint.AutoWidth = false;
+            this.gridViewProducts.OptionsPrint.PrintFooter = false;
+            this.gridViewProducts.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewProducts.OptionsView.ColumnAutoWidth = false;
+            this.gridViewProducts.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewProducts.OptionsView.RowAutoHeight = true;
+            this.gridViewProducts.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewProducts.OptionsView.ShowGroupPanel = false;
+            this.gridViewProducts.OptionsView.ShowViewCaption = true;
+            this.gridViewProducts.ViewCaption = "Products";
             // 
-            // myGridControl2
+            // gridControlDepartments
             // 
-            this.myGridControl2.Location = new System.Drawing.Point(12, 283);
-            this.myGridControl2.MainView = this.myGridView2;
-            this.myGridControl2.Name = "myGridControl2";
-            this.myGridControl2.Size = new System.Drawing.Size(630, 250);
-            this.myGridControl2.TabIndex = 1;
-            this.myGridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.myGridView2});
+            this.gridControlDepartments.Location = new System.Drawing.Point(12, 283);
+            this.gridControlDepartments.MainView = this.gridViewDepartments;
+            this.gridControlDepartments.Name = "gridControlDepartments";
+            this.gridControlDepartments.Size = new System.Drawing.Size(630, 250);
+            this.gridControlDepartments.TabIndex = 1;
+            this.gridControlDepartments.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewDepartments});
             // 
-            // myGridView2
+            // gridViewDepartments
             // 
-            this.myGridView2.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.myGridView2.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView2.Appearance.FooterPanel.Options.UseFont = true;
-            this.myGridView2.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.myGridView2.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView2.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.myGridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.myGridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myGridView2.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView2.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.myGridView2.GridControl = this.myGridControl2;
-            this.myGridView2.Name = "myGridView2";
-            this.myGridView2.OptionsMenu.EnableColumnMenu = false;
-            this.myGridView2.OptionsMenu.EnableFooterMenu = false;
-            this.myGridView2.OptionsMenu.EnableGroupPanelMenu = false;
-            this.myGridView2.OptionsNavigation.EnterMoveNextColumn = true;
-            this.myGridView2.OptionsPrint.AutoWidth = false;
-            this.myGridView2.OptionsPrint.PrintFooter = false;
-            this.myGridView2.OptionsPrint.PrintGroupFooter = false;
-            this.myGridView2.OptionsView.ColumnAutoWidth = false;
-            this.myGridView2.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.myGridView2.OptionsView.RowAutoHeight = true;
-            this.myGridView2.OptionsView.ShowAutoFilterRow = true;
-            this.myGridView2.OptionsView.ShowGroupPanel = false;
-            this.myGridView2.OptionsView.ShowViewCaption = true;
+            this.gridViewDepartments.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewDepartments.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewDepartments.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewDepartments.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewDepartments.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewDepartments.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewDepartments.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewDepartments.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewDepartments.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewDepartments.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewDepartments.GridControl = this.gridControlDepartments;
+            this.gridViewDepartments.Name = "gridViewDepartments";
+            this.gridViewDepartments.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewDepartments.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewDepartments.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewDepartments.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewDepartments.OptionsPrint.AutoWidth = false;
+            this.gridViewDepartments.OptionsPrint.PrintFooter = false;
+            this.gridViewDepartments.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewDepartments.OptionsView.ColumnAutoWidth = false;
+            this.gridViewDepartments.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewDepartments.OptionsView.RowAutoHeight = true;
+            this.gridViewDepartments.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewDepartments.OptionsView.ShowGroupPanel = false;
+            this.gridViewDepartments.OptionsView.ShowViewCaption = true;
+            this.gridViewDepartments.ViewCaption = "Departments";
             // 
-            // myGridControl3
+            // gridControlBrands
             // 
-            this.myGridControl3.Location = new System.Drawing.Point(651, 17);
-            this.myGridControl3.MainView = this.myGridView3;
-            this.myGridControl3.Name = "myGridControl3";
-            this.myGridControl3.Size = new System.Drawing.Size(630, 250);
-            this.myGridControl3.TabIndex = 2;
-            this.myGridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.myGridView3});
+            this.gridControlBrands.Location = new System.Drawing.Point(651, 17);
+            this.gridControlBrands.MainView = this.gridViewBrands;
+            this.gridControlBrands.Name = "gridControlBrands";
+            this.gridControlBrands.Size = new System.Drawing.Size(630, 250);
+            this.gridControlBrands.TabIndex = 2;
+            this.gridControlBrands.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewBrands});
             // 
-            // myGridView3
+            // gridViewBrands
             // 
-            this.myGridView3.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.myGridView3.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView3.Appearance.FooterPanel.Options.UseFont = true;
-            this.myGridView3.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.myGridView3.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView3.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.myGridView3.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.myGridView3.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myGridView3.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView3.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.myGridView3.GridControl = this.myGridControl3;
-            this.myGridView3.Name = "myGridView3";
-            this.myGridView3.OptionsMenu.EnableColumnMenu = false;
-            this.myGridView3.OptionsMenu.EnableFooterMenu = false;
-            this.myGridView3.OptionsMenu.EnableGroupPanelMenu = false;
-            this.myGridView3.OptionsNavigation.EnterMoveNextColumn = true;
-            this.myGridView3.OptionsPrint.AutoWidth = false;
-            this.myGridView3.OptionsPrint.PrintFooter = false;
-            this.myGridView3.OptionsPrint.PrintGroupFooter = false;
-            this.myGridView3.OptionsView.ColumnAutoWidth = false;
-            this.myGridView3.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.myGridView3.OptionsView.RowAutoHeight = true;
-            this.myGridView3.OptionsView.ShowAutoFilterRow = true;
-            this.myGridView3.OptionsView.ShowGroupPanel = false;
-            this.myGridView3.OptionsView.ShowViewCaption = true;
+            this.gridViewBrands.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewBrands.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewBrands.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewBrands.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewBrands.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewBrands.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewBrands.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewBrands.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewBrands.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewBrands.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewBrands.GridControl = this.gridControlBrands;
+            this.gridViewBrands.Name = "gridViewBrands";
+            this.gridViewBrands.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewBrands.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewBrands.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewBrands.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewBrands.OptionsPrint.AutoWidth = false;
+            this.gridViewBrands.OptionsPrint.PrintFooter = false;
+            this.gridViewBrands.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewBrands.OptionsView.ColumnAutoWidth = false;
+            this.gridViewBrands.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewBrands.OptionsView.RowAutoHeight = true;
+            this.gridViewBrands.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewBrands.OptionsView.ShowGroupPanel = false;
+            this.gridViewBrands.OptionsView.ShowViewCaption = true;
+            this.gridViewBrands.ViewCaption = "Brands";
             // 
-            // myGridControl4
+            // gridControlCategories
             // 
-            this.myGridControl4.Location = new System.Drawing.Point(651, 283);
-            this.myGridControl4.MainView = this.myGridView4;
-            this.myGridControl4.Name = "myGridControl4";
-            this.myGridControl4.Size = new System.Drawing.Size(630, 250);
-            this.myGridControl4.TabIndex = 3;
-            this.myGridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.myGridView4});
+            this.gridControlCategories.Location = new System.Drawing.Point(651, 283);
+            this.gridControlCategories.MainView = this.gridViewCategories;
+            this.gridControlCategories.Name = "gridControlCategories";
+            this.gridControlCategories.Size = new System.Drawing.Size(630, 250);
+            this.gridControlCategories.TabIndex = 3;
+            this.gridControlCategories.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewCategories});
             // 
-            // myGridView4
+            // gridViewCategories
             // 
-            this.myGridView4.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.myGridView4.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView4.Appearance.FooterPanel.Options.UseFont = true;
-            this.myGridView4.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.myGridView4.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView4.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.myGridView4.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.myGridView4.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myGridView4.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView4.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.myGridView4.GridControl = this.myGridControl4;
-            this.myGridView4.Name = "myGridView4";
-            this.myGridView4.OptionsMenu.EnableColumnMenu = false;
-            this.myGridView4.OptionsMenu.EnableFooterMenu = false;
-            this.myGridView4.OptionsMenu.EnableGroupPanelMenu = false;
-            this.myGridView4.OptionsNavigation.EnterMoveNextColumn = true;
-            this.myGridView4.OptionsPrint.AutoWidth = false;
-            this.myGridView4.OptionsPrint.PrintFooter = false;
-            this.myGridView4.OptionsPrint.PrintGroupFooter = false;
-            this.myGridView4.OptionsView.ColumnAutoWidth = false;
-            this.myGridView4.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.myGridView4.OptionsView.RowAutoHeight = true;
-            this.myGridView4.OptionsView.ShowAutoFilterRow = true;
-            this.myGridView4.OptionsView.ShowGroupPanel = false;
-            this.myGridView4.OptionsView.ShowViewCaption = true;
+            this.gridViewCategories.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewCategories.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCategories.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewCategories.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewCategories.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCategories.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewCategories.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewCategories.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewCategories.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewCategories.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewCategories.GridControl = this.gridControlCategories;
+            this.gridViewCategories.Name = "gridViewCategories";
+            this.gridViewCategories.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewCategories.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewCategories.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewCategories.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewCategories.OptionsPrint.AutoWidth = false;
+            this.gridViewCategories.OptionsPrint.PrintFooter = false;
+            this.gridViewCategories.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewCategories.OptionsView.ColumnAutoWidth = false;
+            this.gridViewCategories.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewCategories.OptionsView.RowAutoHeight = true;
+            this.gridViewCategories.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewCategories.OptionsView.ShowGroupPanel = false;
+            this.gridViewCategories.OptionsView.ShowViewCaption = true;
+            this.gridViewCategories.ViewCaption = "Categories";
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 543);
-            this.Controls.Add(this.myGridControl4);
-            this.Controls.Add(this.myGridControl3);
-            this.Controls.Add(this.myGridControl2);
-            this.Controls.Add(this.myGridControl1);
+            this.Controls.Add(this.gridControlCategories);
+            this.Controls.Add(this.gridControlBrands);
+            this.Controls.Add(this.gridControlDepartments);
+            this.Controls.Add(this.gridControlProducts);
             this.Name = "HomeForm";
             this.Text = "Home Form";
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView4)).EndInit();
+            this.Load += new System.EventHandler(this.HomeForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewProducts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlDepartments)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDepartments)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlBrands)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBrands)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCategories)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCategories)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Controls.MyGridControl myGridControl1;
-        private Controls.MyGridView myGridView1;
-        private Controls.MyGridControl myGridControl2;
-        private Controls.MyGridView myGridView2;
-        private Controls.MyGridControl myGridControl3;
-        private Controls.MyGridView myGridView3;
-        private Controls.MyGridControl myGridControl4;
-        private Controls.MyGridView myGridView4;
+        private Controls.MyGridControl gridControlProducts;
+        private Controls.MyGridView gridViewProducts;
+        private Controls.MyGridControl gridControlDepartments;
+        private Controls.MyGridView gridViewDepartments;
+        private Controls.MyGridControl gridControlBrands;
+        private Controls.MyGridView gridViewBrands;
+        private Controls.MyGridControl gridControlCategories;
+        private Controls.MyGridView gridViewCategories;
     }
 }
