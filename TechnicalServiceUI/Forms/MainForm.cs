@@ -312,7 +312,7 @@ namespace TechnicalServiceUI.Forms
             }
         }
 
-        private void ribbonControl1_Click(object sender, EventArgs e)
+        private void barBtnInvoiceItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
         }

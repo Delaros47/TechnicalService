@@ -173,7 +173,6 @@
             this.ribbonPageTools,
             this.ribbonPageContact});
             this.ribbonControl1.Size = new System.Drawing.Size(1298, 153);
-            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // barBtnNewCategory
             // 
@@ -356,6 +355,7 @@
             this.barBtnInvoiceItem.Id = 23;
             this.barBtnInvoiceItem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnInvoiceItem.ImageOptions.SvgImage")));
             this.barBtnInvoiceItem.Name = "barBtnInvoiceItem";
+            this.barBtnInvoiceItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnInvoiceItem_ItemClick);
             // 
             // barBtnDetailedInvoiceSearch
             // 
