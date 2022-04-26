@@ -465,6 +465,7 @@
             this.Controls.Add(this.gridControlInvoiceDetails);
             this.Name = "gridViewInvoiceDetails";
             this.Text = "Invoice Details";
+            this.Load += new System.EventHandler(this.gridViewInvoiceDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

@@ -17,5 +17,10 @@ namespace TechnicalServiceUI.Forms
         {
             InitializeComponent();
         }
+
+        private void gridViewInvoiceDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
