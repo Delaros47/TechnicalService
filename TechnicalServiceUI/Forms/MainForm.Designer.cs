@@ -75,6 +75,7 @@
             this.btnBtnProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnInvoices = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnProductsReport = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnHomeForm = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageMainForm = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupMainForm = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -104,7 +105,6 @@
             this.ribbonPageContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupContact = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barBtnHomeForm = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -518,6 +518,14 @@
             this.barBtnProductsReport.Name = "barBtnProductsReport";
             this.barBtnProductsReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnProductsReport_ItemClick);
             // 
+            // barBtnHomeForm
+            // 
+            this.barBtnHomeForm.Caption = "Home Form";
+            this.barBtnHomeForm.Id = 48;
+            this.barBtnHomeForm.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnHomeForm.ImageOptions.SvgImage")));
+            this.barBtnHomeForm.Name = "barBtnHomeForm";
+            this.barBtnHomeForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnHomeForm_ItemClick);
+            // 
             // ribbonPageMainForm
             // 
             this.ribbonPageMainForm.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -737,13 +745,6 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // barBtnHomeForm
-            // 
-            this.barBtnHomeForm.Caption = "Home Form";
-            this.barBtnHomeForm.Id = 48;
-            this.barBtnHomeForm.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barBtnHomeForm.Name = "barBtnHomeForm";
             // 
             // MainForm
             // 

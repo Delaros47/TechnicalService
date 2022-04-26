@@ -41,7 +41,7 @@ namespace TechnicalServiceUI.Forms
         private QRCodeAddForm _qrCodeAddForm;
         private InvoicesForm _invoicesForm;
         private InvoiceDetailsForm _invoiceDetailsForm;
-
+        private HomeForm _homeForm;
 
         public MainForm()
         {
@@ -328,6 +328,16 @@ namespace TechnicalServiceUI.Forms
         private void barBtnProductsReport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
+        }
+
+        private void barBtnHomeForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_homeForm==null || _homeForm.IsDisposed)
+            {
+                _homeForm = new HomeForm();
+                _homeForm.MdiParent = this;
+                _homeForm.Show();
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entities.DTOs;
 using Universal.CrossCuttingCorcerns.Validation;
 using Universal.Utilities.Abstract;
 using Universal.Utilities.Concrete;
@@ -21,6 +22,11 @@ namespace Business.Concrete
         public DepartmentManager(IDepartmentDal departmentDal)
         {
             _departmentDal = departmentDal;
+        }
+
+        public IDataResult<List<DepartmentEmployeeDto>> GetDepartmentEmployeeDto()
+        {
+            return new SuccessDataResult<List<DepartmentEmployeeDto>>(_departmentDal.GetDepartmentEmployeeDto());
         }
 
         public IResult Add(Department department)

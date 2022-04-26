@@ -30,12 +30,20 @@
         {
             this.gridControlProducts = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewProducts = new TechnicalServiceUI.Controls.MyGridView();
+            this.colProductName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colBrandName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colCategoryName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colUnitsInStock = new TechnicalServiceUI.Controls.MyGridColumn();
             this.gridControlDepartments = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewDepartments = new TechnicalServiceUI.Controls.MyGridView();
             this.gridControlBrands = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewBrands = new TechnicalServiceUI.Controls.MyGridView();
+            this.colBrandsBrandName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colTotalProducts = new TechnicalServiceUI.Controls.MyGridColumn();
             this.gridControlCategories = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewCategories = new TechnicalServiceUI.Controls.MyGridView();
+            this.colDeparmentName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colEmployeeNumber = new TechnicalServiceUI.Controls.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDepartments)).BeginInit();
@@ -68,6 +76,11 @@
             this.gridViewProducts.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewProducts.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewProducts.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewProducts.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colProductName,
+            this.colBrandName,
+            this.colCategoryName,
+            this.colUnitsInStock});
             this.gridViewProducts.GridControl = this.gridControlProducts;
             this.gridViewProducts.Name = "gridViewProducts";
             this.gridViewProducts.OptionsMenu.EnableColumnMenu = false;
@@ -84,6 +97,46 @@
             this.gridViewProducts.OptionsView.ShowGroupPanel = false;
             this.gridViewProducts.OptionsView.ShowViewCaption = true;
             this.gridViewProducts.ViewCaption = "Products";
+            // 
+            // colProductName
+            // 
+            this.colProductName.Caption = "Product Name";
+            this.colProductName.FieldName = "ProductName";
+            this.colProductName.Name = "colProductName";
+            this.colProductName.OptionsColumn.AllowEdit = false;
+            this.colProductName.Visible = true;
+            this.colProductName.VisibleIndex = 0;
+            this.colProductName.Width = 140;
+            // 
+            // colBrandName
+            // 
+            this.colBrandName.Caption = "Brand Name";
+            this.colBrandName.FieldName = "BrandName";
+            this.colBrandName.Name = "colBrandName";
+            this.colBrandName.OptionsColumn.AllowEdit = false;
+            this.colBrandName.Visible = true;
+            this.colBrandName.VisibleIndex = 1;
+            this.colBrandName.Width = 140;
+            // 
+            // colCategoryName
+            // 
+            this.colCategoryName.Caption = "Category Name";
+            this.colCategoryName.FieldName = "CategoryName";
+            this.colCategoryName.Name = "colCategoryName";
+            this.colCategoryName.OptionsColumn.AllowEdit = false;
+            this.colCategoryName.Visible = true;
+            this.colCategoryName.VisibleIndex = 2;
+            this.colCategoryName.Width = 140;
+            // 
+            // colUnitsInStock
+            // 
+            this.colUnitsInStock.Caption = "Units In Stock";
+            this.colUnitsInStock.FieldName = "UnitsInStock";
+            this.colUnitsInStock.Name = "colUnitsInStock";
+            this.colUnitsInStock.OptionsColumn.AllowEdit = false;
+            this.colUnitsInStock.Visible = true;
+            this.colUnitsInStock.VisibleIndex = 3;
+            this.colUnitsInStock.Width = 140;
             // 
             // gridControlDepartments
             // 
@@ -107,6 +160,9 @@
             this.gridViewDepartments.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewDepartments.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewDepartments.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewDepartments.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colDeparmentName,
+            this.colEmployeeNumber});
             this.gridViewDepartments.GridControl = this.gridControlDepartments;
             this.gridViewDepartments.Name = "gridViewDepartments";
             this.gridViewDepartments.OptionsMenu.EnableColumnMenu = false;
@@ -146,6 +202,9 @@
             this.gridViewBrands.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewBrands.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewBrands.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewBrands.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colBrandsBrandName,
+            this.colTotalProducts});
             this.gridViewBrands.GridControl = this.gridControlBrands;
             this.gridViewBrands.Name = "gridViewBrands";
             this.gridViewBrands.OptionsMenu.EnableColumnMenu = false;
@@ -162,6 +221,26 @@
             this.gridViewBrands.OptionsView.ShowGroupPanel = false;
             this.gridViewBrands.OptionsView.ShowViewCaption = true;
             this.gridViewBrands.ViewCaption = "Brands";
+            // 
+            // colBrandsBrandName
+            // 
+            this.colBrandsBrandName.Caption = "Brand Name";
+            this.colBrandsBrandName.FieldName = "BrandName";
+            this.colBrandsBrandName.Name = "colBrandsBrandName";
+            this.colBrandsBrandName.OptionsColumn.AllowEdit = false;
+            this.colBrandsBrandName.Visible = true;
+            this.colBrandsBrandName.VisibleIndex = 0;
+            this.colBrandsBrandName.Width = 300;
+            // 
+            // colTotalProducts
+            // 
+            this.colTotalProducts.Caption = "Total Products";
+            this.colTotalProducts.FieldName = "TotalProducts";
+            this.colTotalProducts.Name = "colTotalProducts";
+            this.colTotalProducts.OptionsColumn.AllowEdit = false;
+            this.colTotalProducts.Visible = true;
+            this.colTotalProducts.VisibleIndex = 1;
+            this.colTotalProducts.Width = 300;
             // 
             // gridControlCategories
             // 
@@ -202,6 +281,26 @@
             this.gridViewCategories.OptionsView.ShowViewCaption = true;
             this.gridViewCategories.ViewCaption = "Categories";
             // 
+            // colDeparmentName
+            // 
+            this.colDeparmentName.Caption = "Department Name";
+            this.colDeparmentName.FieldName = "DepartmentName";
+            this.colDeparmentName.Name = "colDeparmentName";
+            this.colDeparmentName.OptionsColumn.AllowEdit = false;
+            this.colDeparmentName.Visible = true;
+            this.colDeparmentName.VisibleIndex = 0;
+            this.colDeparmentName.Width = 300;
+            // 
+            // colEmployeeNumber
+            // 
+            this.colEmployeeNumber.Caption = "Total Employee Number";
+            this.colEmployeeNumber.FieldName = "EmployeeNumber";
+            this.colEmployeeNumber.Name = "colEmployeeNumber";
+            this.colEmployeeNumber.OptionsColumn.AllowEdit = false;
+            this.colEmployeeNumber.Visible = true;
+            this.colEmployeeNumber.VisibleIndex = 1;
+            this.colEmployeeNumber.Width = 300;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,5 +335,13 @@
         private Controls.MyGridView gridViewBrands;
         private Controls.MyGridControl gridControlCategories;
         private Controls.MyGridView gridViewCategories;
+        private Controls.MyGridColumn colProductName;
+        private Controls.MyGridColumn colBrandName;
+        private Controls.MyGridColumn colCategoryName;
+        private Controls.MyGridColumn colUnitsInStock;
+        private Controls.MyGridColumn colBrandsBrandName;
+        private Controls.MyGridColumn colTotalProducts;
+        private Controls.MyGridColumn colDeparmentName;
+        private Controls.MyGridColumn colEmployeeNumber;
     }
 }
