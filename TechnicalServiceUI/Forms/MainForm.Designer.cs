@@ -74,6 +74,7 @@
             this.barbtnNewProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.btnBtnProductSales = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnInvoices = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnProductsReport = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageMainForm = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupMainForm = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -97,12 +98,13 @@
             this.ribbonPageStatistics = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageReports = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageTools = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupContact = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barBtnHomeForm = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -155,9 +157,11 @@
             this.barBtnWord,
             this.barbtnNewProductSales,
             this.btnBtnProductSales,
-            this.barBtnInvoices});
+            this.barBtnInvoices,
+            this.barBtnProductsReport,
+            this.barBtnHomeForm});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 47;
+            this.ribbonControl1.MaxItemId = 49;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageMainForm,
@@ -392,10 +396,6 @@
             this.barBtnCalculator.Name = "barBtnCalculator";
             this.barBtnCalculator.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCalculator_ItemClick);
             // 
-            // barBtnExchangeTransactions
-            // 
-
-            // 
             // barBtnExcel
             // 
             this.barBtnExcel.Caption = "Excel";
@@ -510,6 +510,14 @@
             this.barBtnInvoices.Name = "barBtnInvoices";
             this.barBtnInvoices.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnInvoices_ItemClick);
             // 
+            // barBtnProductsReport
+            // 
+            this.barBtnProductsReport.Caption = "Product Reports";
+            this.barBtnProductsReport.Id = 47;
+            this.barBtnProductsReport.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnProductsReport.ImageOptions.SvgImage")));
+            this.barBtnProductsReport.Name = "barBtnProductsReport";
+            this.barBtnProductsReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnProductsReport_ItemClick);
+            // 
             // ribbonPageMainForm
             // 
             this.ribbonPageMainForm.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -520,6 +528,7 @@
             // 
             // ribbonPageGroupMainForm
             // 
+            this.ribbonPageGroupMainForm.ItemLinks.Add(this.barBtnHomeForm);
             this.ribbonPageGroupMainForm.Name = "ribbonPageGroupMainForm";
             // 
             // ribbonPageProducts
@@ -685,15 +694,16 @@
             // ribbonPageReports
             // 
             this.ribbonPageReports.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
+            this.ribbonPageGroupReports});
             this.ribbonPageReports.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageReports.ImageOptions.Image")));
             this.ribbonPageReports.Name = "ribbonPageReports";
             this.ribbonPageReports.Text = "REPORTS";
             // 
-            // ribbonPageGroup5
+            // ribbonPageGroupReports
             // 
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "ribbonPageGroup5";
+            this.ribbonPageGroupReports.ItemLinks.Add(this.barBtnProductsReport);
+            this.ribbonPageGroupReports.Name = "ribbonPageGroupReports";
+            this.ribbonPageGroupReports.Text = "Reports";
             // 
             // ribbonPageTools
             // 
@@ -705,7 +715,7 @@
             // 
             // ribbonPageGroupTools
             // 
-   
+            this.ribbonPageGroupTools.Name = "ribbonPageGroupTools";
             // 
             // ribbonPageContact
             // 
@@ -727,6 +737,13 @@
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // barBtnHomeForm
+            // 
+            this.barBtnHomeForm.Caption = "Home Form";
+            this.barBtnHomeForm.Id = 48;
+            this.barBtnHomeForm.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barBtnHomeForm.Name = "barBtnHomeForm";
             // 
             // MainForm
             // 
@@ -759,7 +776,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageInvoices;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupMovements;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageReports;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupReports;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageContact;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupContact;
         private DevExpress.XtraBars.BarButtonItem barBtnNewCategory;
@@ -822,5 +839,7 @@
         private DevExpress.XtraBars.BarButtonItem btnBtnProductSales;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupProductSales;
         private DevExpress.XtraBars.BarButtonItem barBtnInvoices;
+        private DevExpress.XtraBars.BarButtonItem barBtnProductsReport;
+        private DevExpress.XtraBars.BarButtonItem barBtnHomeForm;
     }
 }

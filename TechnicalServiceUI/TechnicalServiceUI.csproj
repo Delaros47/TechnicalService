@@ -9,12 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Reports\ProductsReport.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ProductsReport.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="devexpress.win.design" Version="21.2.3" />
     <PackageReference Include="MessagingToolkit.QRCode" Version="1.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Reports\ProductsReport.cs">
+      <DependentUpon>ProductsReport.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\ProductsReport.Designer.cs">
+      <DependentUpon>ProductsReport.vsrepx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

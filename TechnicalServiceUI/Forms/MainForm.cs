@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechnicalServiceUI.Reports;
 
 namespace TechnicalServiceUI.Forms
 {
@@ -40,6 +41,7 @@ namespace TechnicalServiceUI.Forms
         private QRCodeAddForm _qrCodeAddForm;
         private InvoicesForm _invoicesForm;
         private InvoiceDetailsForm _invoiceDetailsForm;
+
 
         public MainForm()
         {
@@ -321,6 +323,11 @@ namespace TechnicalServiceUI.Forms
                 _invoiceDetailsForm.MdiParent = this;
                 _invoiceDetailsForm.Show();
             }
+        }
+
+        private void barBtnProductsReport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
         }
     }
 }
