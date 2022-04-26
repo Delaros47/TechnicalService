@@ -59,7 +59,6 @@
             this.barBtnInvoicePdf = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnNewNote = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnCalculator = new DevExpress.XtraBars.BarButtonItem();
-            this.barBtnExchangeTransactions = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnExcel = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnHelp = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnStatisticsCard = new DevExpress.XtraBars.BarButtonItem();
@@ -142,7 +141,6 @@
             this.barBtnInvoicePdf,
             this.barBtnNewNote,
             this.barBtnCalculator,
-            this.barBtnExchangeTransactions,
             this.barBtnExcel,
             this.barBtnHelp,
             this.barBtnStatisticsCard,
@@ -396,10 +394,7 @@
             // 
             // barBtnExchangeTransactions
             // 
-            this.barBtnExchangeTransactions.Caption = "Exchange Transactions";
-            this.barBtnExchangeTransactions.Id = 31;
-            this.barBtnExchangeTransactions.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnExchangeTransactions.ImageOptions.SvgImage")));
-            this.barBtnExchangeTransactions.Name = "barBtnExchangeTransactions";
+
             // 
             // barBtnExcel
             // 
@@ -710,14 +705,7 @@
             // 
             // ribbonPageGroupTools
             // 
-            this.ribbonPageGroupTools.ItemLinks.Add(this.barBtnCalculator);
-            this.ribbonPageGroupTools.ItemLinks.Add(this.barBtnNewNote);
-            this.ribbonPageGroupTools.ItemLinks.Add(this.barBtnExchangeTransactions);
-            this.ribbonPageGroupTools.ItemLinks.Add(this.barBtnExcel);
-            this.ribbonPageGroupTools.ItemLinks.Add(this.barBtnWord);
-            this.ribbonPageGroupTools.ItemLinks.Add(this.barBtnHelp);
-            this.ribbonPageGroupTools.Name = "ribbonPageGroupTools";
-            this.ribbonPageGroupTools.Text = "Tools";
+   
             // 
             // ribbonPageContact
             // 
@@ -812,7 +800,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupTools;
         private DevExpress.XtraBars.BarButtonItem barBtnNewNote;
         private DevExpress.XtraBars.BarButtonItem barBtnCalculator;
-        private DevExpress.XtraBars.BarButtonItem barBtnExchangeTransactions;
         private DevExpress.XtraBars.BarButtonItem barBtnExcel;
         private DevExpress.XtraBars.BarButtonItem barBtnHelp;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageStatistics;
