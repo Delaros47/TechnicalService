@@ -10,6 +10,8 @@ namespace Entities.DTOs
     {
         public int InvoiceDetailId { get; set; }
         public int Unit { get; set; }
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
         public decimal Price { get; set; }
         public decimal TotalPrice { get; set; }
         public int InvoiceInfoId { get; set; }

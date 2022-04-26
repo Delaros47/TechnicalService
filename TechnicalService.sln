@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{2E0E287E-1D6F-4B93-920B-54E2EFA82694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalServiceUI", "TechnicalServiceUI\TechnicalServiceUI.csproj", "{4E2E5811-D8D1-4179-B44A-2EF8485F9F8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalServiceUI", "TechnicalServiceUI\TechnicalServiceUI.csproj", "{4E2E5811-D8D1-4179-B44A-2EF8485F9F8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

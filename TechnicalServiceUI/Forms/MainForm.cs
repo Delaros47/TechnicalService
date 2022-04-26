@@ -39,6 +39,7 @@ namespace TechnicalServiceUI.Forms
         private MalfunctionTrackingsForm _malfunctionTrackingsForm;
         private QRCodeAddForm _qrCodeAddForm;
         private InvoicesForm _invoicesForm;
+        private InvoiceDetailsForm _invoiceDetailsForm;
 
         public MainForm()
         {
@@ -314,7 +315,12 @@ namespace TechnicalServiceUI.Forms
 
         private void barBtnInvoiceItem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            if (_invoiceDetailsForm==null || _invoiceDetailsForm.IsDisposed)
+            {
+                _invoiceDetailsForm = new InvoiceDetailsForm();
+                _invoiceDetailsForm.MdiParent = this;
+                _invoiceDetailsForm.Show();
+            }
         }
     }
 }

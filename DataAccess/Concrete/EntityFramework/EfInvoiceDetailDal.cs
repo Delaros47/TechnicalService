@@ -20,13 +20,18 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from i in context.InvoiceDetails
                              join ii in context.InvoiceInfos
                                  on i.InvoiceInfoId equals ii.InvoiceInfoId
+                                 join p in context.Products
+                                 on i.ProductId equals  p.ProductId
                              select new InvoiceDetailDto
                              {
+                                 ProductId = p.ProductId,
+                                 ProductName = p.ProductName,
                                  InvoiceDetailId = i.InvoiceDetailId,
                                  Price = i.Price,
                                  TotalPrice = i.TotalPrice,
                                  Unit = i.Unit,
                                  InvoiceInfoId = ii.InvoiceInfoId
+                                 
                              };
 
                 return result.ToList();

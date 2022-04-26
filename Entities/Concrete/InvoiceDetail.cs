@@ -10,7 +10,7 @@ namespace Entities.Concrete
     public class InvoiceDetail:IEntity
     {
         public int InvoiceDetailId { get; set; }
-        public string ProductName { get; set; }
+        public int ProductId { get; set; }
         public int Unit { get; set; }
         public decimal Price { get; set; }
         public decimal TotalPrice { get; set; }

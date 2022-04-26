@@ -1,6 +1,6 @@
 ﻿namespace TechnicalServiceUI.Forms
 {
-    partial class gridViewInvoiceDetails
+    partial class InvoiceDetailsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gridViewInvoiceDetails));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoiceDetailsForm));
             DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
@@ -274,6 +274,9 @@
             this.lueProductName.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.lueProductName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueProductName.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProductId", "Product ID"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ProductName", "Product Name")});
             this.lueProductName.Properties.NullText = "";
             this.lueProductName.Size = new System.Drawing.Size(198, 20);
             this.lueProductName.StyleController = this.myDataLayoutControl1;
@@ -288,6 +291,8 @@
             this.lueInvoiceId.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.lueInvoiceId.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lueInvoiceId.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("InvoiceInfoId", "Invoice ID")});
             this.lueInvoiceId.Properties.NullText = "";
             this.lueInvoiceId.Size = new System.Drawing.Size(198, 20);
             this.lueInvoiceId.StyleController = this.myDataLayoutControl1;
@@ -456,16 +461,16 @@
             this.layoutControlItem2.Text = "Product Name";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(79, 13);
             // 
-            // gridViewInvoiceDetails
+            // InvoiceDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 543);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.gridControlInvoiceDetails);
-            this.Name = "gridViewInvoiceDetails";
+            this.Name = "InvoiceDetailsForm";
             this.Text = "Invoice Details";
-            this.Load += new System.EventHandler(this.gridViewInvoiceDetails_Load);
+            this.Load += new System.EventHandler(this.InvoiceDetailsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
