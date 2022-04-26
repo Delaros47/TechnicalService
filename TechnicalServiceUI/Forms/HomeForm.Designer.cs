@@ -36,14 +36,16 @@
             this.colUnitsInStock = new TechnicalServiceUI.Controls.MyGridColumn();
             this.gridControlDepartments = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewDepartments = new TechnicalServiceUI.Controls.MyGridView();
+            this.colDeparmentName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colEmployeeNumber = new TechnicalServiceUI.Controls.MyGridColumn();
             this.gridControlBrands = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewBrands = new TechnicalServiceUI.Controls.MyGridView();
             this.colBrandsBrandName = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colTotalProducts = new TechnicalServiceUI.Controls.MyGridColumn();
             this.gridControlCategories = new TechnicalServiceUI.Controls.MyGridControl();
             this.gridViewCategories = new TechnicalServiceUI.Controls.MyGridView();
-            this.colDeparmentName = new TechnicalServiceUI.Controls.MyGridColumn();
-            this.colEmployeeNumber = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colCatCategoryName = new TechnicalServiceUI.Controls.MyGridColumn();
+            this.colProductNumber = new TechnicalServiceUI.Controls.MyGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlDepartments)).BeginInit();
@@ -180,6 +182,26 @@
             this.gridViewDepartments.OptionsView.ShowViewCaption = true;
             this.gridViewDepartments.ViewCaption = "Departments";
             // 
+            // colDeparmentName
+            // 
+            this.colDeparmentName.Caption = "Department Name";
+            this.colDeparmentName.FieldName = "DepartmentName";
+            this.colDeparmentName.Name = "colDeparmentName";
+            this.colDeparmentName.OptionsColumn.AllowEdit = false;
+            this.colDeparmentName.Visible = true;
+            this.colDeparmentName.VisibleIndex = 0;
+            this.colDeparmentName.Width = 300;
+            // 
+            // colEmployeeNumber
+            // 
+            this.colEmployeeNumber.Caption = "Total Employee Number";
+            this.colEmployeeNumber.FieldName = "EmployeeNumber";
+            this.colEmployeeNumber.Name = "colEmployeeNumber";
+            this.colEmployeeNumber.OptionsColumn.AllowEdit = false;
+            this.colEmployeeNumber.Visible = true;
+            this.colEmployeeNumber.VisibleIndex = 1;
+            this.colEmployeeNumber.Width = 300;
+            // 
             // gridControlBrands
             // 
             this.gridControlBrands.Location = new System.Drawing.Point(651, 17);
@@ -264,6 +286,9 @@
             this.gridViewCategories.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridViewCategories.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.gridViewCategories.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewCategories.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colCatCategoryName,
+            this.colProductNumber});
             this.gridViewCategories.GridControl = this.gridControlCategories;
             this.gridViewCategories.Name = "gridViewCategories";
             this.gridViewCategories.OptionsMenu.EnableColumnMenu = false;
@@ -281,25 +306,25 @@
             this.gridViewCategories.OptionsView.ShowViewCaption = true;
             this.gridViewCategories.ViewCaption = "Categories";
             // 
-            // colDeparmentName
+            // colCatCategoryName
             // 
-            this.colDeparmentName.Caption = "Department Name";
-            this.colDeparmentName.FieldName = "DepartmentName";
-            this.colDeparmentName.Name = "colDeparmentName";
-            this.colDeparmentName.OptionsColumn.AllowEdit = false;
-            this.colDeparmentName.Visible = true;
-            this.colDeparmentName.VisibleIndex = 0;
-            this.colDeparmentName.Width = 300;
+            this.colCatCategoryName.Caption = "Category Name";
+            this.colCatCategoryName.FieldName = "CategoryName";
+            this.colCatCategoryName.Name = "colCatCategoryName";
+            this.colCatCategoryName.OptionsColumn.AllowEdit = false;
+            this.colCatCategoryName.Visible = true;
+            this.colCatCategoryName.VisibleIndex = 0;
+            this.colCatCategoryName.Width = 300;
             // 
-            // colEmployeeNumber
+            // colProductNumber
             // 
-            this.colEmployeeNumber.Caption = "Total Employee Number";
-            this.colEmployeeNumber.FieldName = "EmployeeNumber";
-            this.colEmployeeNumber.Name = "colEmployeeNumber";
-            this.colEmployeeNumber.OptionsColumn.AllowEdit = false;
-            this.colEmployeeNumber.Visible = true;
-            this.colEmployeeNumber.VisibleIndex = 1;
-            this.colEmployeeNumber.Width = 300;
+            this.colProductNumber.Caption = "Total Product Number";
+            this.colProductNumber.FieldName = "ProductNumber";
+            this.colProductNumber.Name = "colProductNumber";
+            this.colProductNumber.OptionsColumn.AllowEdit = false;
+            this.colProductNumber.Visible = true;
+            this.colProductNumber.VisibleIndex = 1;
+            this.colProductNumber.Width = 300;
             // 
             // HomeForm
             // 
@@ -343,5 +368,7 @@
         private Controls.MyGridColumn colTotalProducts;
         private Controls.MyGridColumn colDeparmentName;
         private Controls.MyGridColumn colEmployeeNumber;
+        private Controls.MyGridColumn colCatCategoryName;
+        private Controls.MyGridColumn colProductNumber;
     }
 }

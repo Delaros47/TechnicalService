@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entities.DTOs;
 using Universal.CrossCuttingCorcerns.Validation;
 using Universal.Utilities.Abstract;
 using Universal.Utilities.Concrete;
@@ -21,6 +22,11 @@ namespace Business.Concrete
         public CategoryManager(ICategoryDal categoryDal)
         {
             _categoryDal = categoryDal;
+        }
+
+        public IDataResult<List<CategoryProductDetailDto>> GetCategoryProductDetailDto()
+        {
+            return new SuccessDataResult<List<CategoryProductDetailDto>>(_categoryDal.GetCategoryProductDetailDto());
         }
 
         public IResult Add(Category category)

@@ -18,16 +18,19 @@ namespace TechnicalServiceUI.Forms
         private readonly IProductService _productService;
         private readonly IBrandService _brandService;
         private readonly IDepartmentService _departmentService;
+        private readonly ICategoryService _categoryService;
         public HomeForm()
         {
             InitializeComponent();
             _productService = InstanceFactory.GetInstance<IProductService>();
             _brandService = InstanceFactory.GetInstance<IBrandService>();
             _departmentService = InstanceFactory.GetInstance<IDepartmentService>();
+            _categoryService = InstanceFactory.GetInstance<ICategoryService>();
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
+            GetCategoryProductDetailDto();
             GetProductDetailDto();
             GetBrandsWithTotalProductNumber();
             GetDeparmentEmployeeDto();
@@ -46,6 +49,11 @@ namespace TechnicalServiceUI.Forms
         private void GetDeparmentEmployeeDto()
         {
             gridControlDepartments.DataSource = _departmentService.GetDepartmentEmployeeDto().Data;
+        }
+
+        private void GetCategoryProductDetailDto()
+        {
+            gridControlCategories.DataSource = _categoryService.GetCategoryProductDetailDto().Data;
         }
 
     }
