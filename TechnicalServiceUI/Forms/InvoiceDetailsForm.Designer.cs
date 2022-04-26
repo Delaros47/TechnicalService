@@ -38,7 +38,7 @@
             DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
             DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
             this.gridControlInvoiceDetails = new TechnicalServiceUI.Controls.MyGridControl();
-            this.myGridView1 = new TechnicalServiceUI.Controls.MyGridView();
+            this.gridViewInvoiceDetails = new TechnicalServiceUI.Controls.MyGridView();
             this.colInvoiceDetailId = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colProductName = new TechnicalServiceUI.Controls.MyGridColumn();
             this.colUnit = new TechnicalServiceUI.Controls.MyGridColumn();
@@ -65,7 +65,7 @@
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoiceDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).BeginInit();
@@ -89,47 +89,49 @@
             // 
             this.gridControlInvoiceDetails.Dock = System.Windows.Forms.DockStyle.Left;
             this.gridControlInvoiceDetails.Location = new System.Drawing.Point(0, 0);
-            this.gridControlInvoiceDetails.MainView = this.myGridView1;
+            this.gridControlInvoiceDetails.MainView = this.gridViewInvoiceDetails;
             this.gridControlInvoiceDetails.Name = "gridControlInvoiceDetails";
             this.gridControlInvoiceDetails.Size = new System.Drawing.Size(976, 543);
             this.gridControlInvoiceDetails.TabIndex = 0;
             this.gridControlInvoiceDetails.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.myGridView1});
+            this.gridViewInvoiceDetails});
             // 
-            // myGridView1
+            // gridViewInvoiceDetails
             // 
-            this.myGridView1.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.myGridView1.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView1.Appearance.FooterPanel.Options.UseFont = true;
-            this.myGridView1.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.myGridView1.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView1.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.myGridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.myGridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.myGridView1.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.myGridView1.Appearance.ViewCaption.Options.UseForeColor = true;
-            this.myGridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridViewInvoiceDetails.Appearance.FooterPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gridViewInvoiceDetails.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewInvoiceDetails.Appearance.FooterPanel.Options.UseFont = true;
+            this.gridViewInvoiceDetails.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.gridViewInvoiceDetails.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewInvoiceDetails.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.gridViewInvoiceDetails.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridViewInvoiceDetails.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridViewInvoiceDetails.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.gridViewInvoiceDetails.Appearance.ViewCaption.Options.UseForeColor = true;
+            this.gridViewInvoiceDetails.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colInvoiceDetailId,
             this.colProductName,
             this.colUnit,
             this.colPrice,
             this.colTotalPrice,
             this.colInvoiceInfoId});
-            this.myGridView1.GridControl = this.gridControlInvoiceDetails;
-            this.myGridView1.Name = "myGridView1";
-            this.myGridView1.OptionsMenu.EnableColumnMenu = false;
-            this.myGridView1.OptionsMenu.EnableFooterMenu = false;
-            this.myGridView1.OptionsMenu.EnableGroupPanelMenu = false;
-            this.myGridView1.OptionsNavigation.EnterMoveNextColumn = true;
-            this.myGridView1.OptionsPrint.AutoWidth = false;
-            this.myGridView1.OptionsPrint.PrintFooter = false;
-            this.myGridView1.OptionsPrint.PrintGroupFooter = false;
-            this.myGridView1.OptionsView.ColumnAutoWidth = false;
-            this.myGridView1.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.myGridView1.OptionsView.RowAutoHeight = true;
-            this.myGridView1.OptionsView.ShowAutoFilterRow = true;
-            this.myGridView1.OptionsView.ShowGroupPanel = false;
-            this.myGridView1.OptionsView.ShowViewCaption = true;
+            this.gridViewInvoiceDetails.GridControl = this.gridControlInvoiceDetails;
+            this.gridViewInvoiceDetails.Name = "gridViewInvoiceDetails";
+            this.gridViewInvoiceDetails.OptionsMenu.EnableColumnMenu = false;
+            this.gridViewInvoiceDetails.OptionsMenu.EnableFooterMenu = false;
+            this.gridViewInvoiceDetails.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gridViewInvoiceDetails.OptionsNavigation.EnterMoveNextColumn = true;
+            this.gridViewInvoiceDetails.OptionsPrint.AutoWidth = false;
+            this.gridViewInvoiceDetails.OptionsPrint.PrintFooter = false;
+            this.gridViewInvoiceDetails.OptionsPrint.PrintGroupFooter = false;
+            this.gridViewInvoiceDetails.OptionsView.ColumnAutoWidth = false;
+            this.gridViewInvoiceDetails.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.gridViewInvoiceDetails.OptionsView.RowAutoHeight = true;
+            this.gridViewInvoiceDetails.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewInvoiceDetails.OptionsView.ShowGroupPanel = false;
+            this.gridViewInvoiceDetails.OptionsView.ShowViewCaption = true;
+            this.gridViewInvoiceDetails.ViewCaption = "Invoice Details";
+            this.gridViewInvoiceDetails.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridViewInvoiceDetails_FocusedRowChanged);
             // 
             // colInvoiceDetailId
             // 
@@ -214,6 +216,7 @@
             this.btnClearInvoiceDetails.Size = new System.Drawing.Size(137, 23);
             this.btnClearInvoiceDetails.TabIndex = 4;
             this.btnClearInvoiceDetails.Text = "Clear All";
+            this.btnClearInvoiceDetails.Click += new System.EventHandler(this.btnClearInvoiceDetails_Click);
             // 
             // btnUpdateInvoiceDetail
             // 
@@ -225,6 +228,7 @@
             this.btnUpdateInvoiceDetail.Size = new System.Drawing.Size(137, 23);
             this.btnUpdateInvoiceDetail.TabIndex = 3;
             this.btnUpdateInvoiceDetail.Text = "Update Invoice Detail";
+            this.btnUpdateInvoiceDetail.Click += new System.EventHandler(this.btnUpdateInvoiceDetail_Click);
             // 
             // btnDeleteInvoiceDetail
             // 
@@ -236,6 +240,7 @@
             this.btnDeleteInvoiceDetail.Size = new System.Drawing.Size(137, 23);
             this.btnDeleteInvoiceDetail.TabIndex = 2;
             this.btnDeleteInvoiceDetail.Text = "Delete Invoice Detail";
+            this.btnDeleteInvoiceDetail.Click += new System.EventHandler(this.btnDeleteInvoiceDetail_Click);
             // 
             // btnAddInvoiceDetail
             // 
@@ -247,6 +252,7 @@
             this.btnAddInvoiceDetail.Size = new System.Drawing.Size(137, 23);
             this.btnAddInvoiceDetail.TabIndex = 1;
             this.btnAddInvoiceDetail.Text = "Add Invoice Detail";
+            this.btnAddInvoiceDetail.Click += new System.EventHandler(this.btnAddInvoiceDetail_Click);
             // 
             // myDataLayoutControl1
             // 
@@ -306,7 +312,6 @@
             this.txtTotalPrice.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtTotalPrice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtTotalPrice.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtTotalPrice.Properties.Mask.EditMask = "c";
             this.txtTotalPrice.Properties.MaskSettings.Set("mask", "c");
             this.txtTotalPrice.Size = new System.Drawing.Size(198, 20);
             this.txtTotalPrice.StyleController = this.myDataLayoutControl1;
@@ -320,7 +325,6 @@
             this.txtPrice.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPrice.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPrice.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtPrice.Properties.Mask.EditMask = "c";
             this.txtPrice.Properties.MaskSettings.Set("mask", "c");
             this.txtPrice.Size = new System.Drawing.Size(198, 20);
             this.txtPrice.StyleController = this.myDataLayoutControl1;
@@ -344,6 +348,7 @@
             this.txtInvoiceDetailId.Name = "txtInvoiceDetailId";
             this.txtInvoiceDetailId.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtInvoiceDetailId.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtInvoiceDetailId.Properties.ReadOnly = true;
             this.txtInvoiceDetailId.Size = new System.Drawing.Size(198, 20);
             this.txtInvoiceDetailId.StyleController = this.myDataLayoutControl1;
             this.txtInvoiceDetailId.TabIndex = 4;
@@ -472,7 +477,7 @@
             this.Text = "Invoice Details";
             this.Load += new System.EventHandler(this.InvoiceDetailsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlInvoiceDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.myGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewInvoiceDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();
@@ -497,7 +502,7 @@
         #endregion
 
         private Controls.MyGridControl gridControlInvoiceDetails;
-        private Controls.MyGridView myGridView1;
+        private Controls.MyGridView gridViewInvoiceDetails;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private Controls.MyDataLayoutControl myDataLayoutControl1;
         private Controls.MyLookUpEdit lueProductName;
