@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TechnicalServiceUI;
+using TechnicalServiceUI.FormReports;
 
 namespace TechnicalServiceUI.Forms
 {
@@ -42,6 +43,9 @@ namespace TechnicalServiceUI.Forms
         private InvoicesForm _invoicesForm;
         private InvoiceDetailsForm _invoiceDetailsForm;
         private HomeForm _homeForm;
+        private ProductsReport _productsReport;
+        private BrandsReport _brandsReport;
+        private CategoriesReport _categoriesReport;
 
         public MainForm()
         {
@@ -327,7 +331,11 @@ namespace TechnicalServiceUI.Forms
 
         private void barBtnProductsReport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           
+            if (_productsReport==null || _productsReport.IsDisposed)
+            {
+                _productsReport = new ProductsReport();
+                _productsReport.Show();
+            }
         }
 
         private void barBtnHomeForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -337,6 +345,24 @@ namespace TechnicalServiceUI.Forms
                 _homeForm = new HomeForm();
                 _homeForm.MdiParent = this;
                 _homeForm.Show();
+            }
+        }
+
+        private void barBtnBrandReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_brandsReport==null || _brandsReport.IsDisposed)
+            {
+                _brandsReport = new BrandsReport();
+                _brandsReport.Show();
+            }
+        }
+
+        private void barBtnCategoryReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_categoriesReport ==null || _categoriesReport.IsDisposed)
+            {
+                _categoriesReport = new CategoriesReport();
+                _categoriesReport.Show();
             }
         }
     }

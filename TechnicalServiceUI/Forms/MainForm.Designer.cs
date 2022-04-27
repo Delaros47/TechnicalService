@@ -76,6 +76,8 @@
             this.barBtnInvoices = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnProductsReport = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnHomeForm = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnBrandReports = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCategoryReports = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageMainForm = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupMainForm = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageProducts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -159,9 +161,11 @@
             this.btnBtnProductSales,
             this.barBtnInvoices,
             this.barBtnProductsReport,
-            this.barBtnHomeForm});
+            this.barBtnHomeForm,
+            this.barBtnBrandReports,
+            this.barBtnCategoryReports});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 49;
+            this.ribbonControl1.MaxItemId = 51;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageMainForm,
@@ -526,6 +530,22 @@
             this.barBtnHomeForm.Name = "barBtnHomeForm";
             this.barBtnHomeForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnHomeForm_ItemClick);
             // 
+            // barBtnBrandReports
+            // 
+            this.barBtnBrandReports.Caption = "Brand Reports";
+            this.barBtnBrandReports.Id = 49;
+            this.barBtnBrandReports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnBrandReports.ImageOptions.SvgImage")));
+            this.barBtnBrandReports.Name = "barBtnBrandReports";
+            this.barBtnBrandReports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnBrandReports_ItemClick);
+            // 
+            // barBtnCategoryReports
+            // 
+            this.barBtnCategoryReports.Caption = "Category Reports";
+            this.barBtnCategoryReports.Id = 50;
+            this.barBtnCategoryReports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barBtnCategoryReports.Name = "barBtnCategoryReports";
+            this.barBtnCategoryReports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCategoryReports_ItemClick);
+            // 
             // ribbonPageMainForm
             // 
             this.ribbonPageMainForm.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -711,6 +731,8 @@
             // ribbonPageGroupReports
             // 
             this.ribbonPageGroupReports.ItemLinks.Add(this.barBtnProductsReport);
+            this.ribbonPageGroupReports.ItemLinks.Add(this.barBtnBrandReports);
+            this.ribbonPageGroupReports.ItemLinks.Add(this.barBtnCategoryReports);
             this.ribbonPageGroupReports.Name = "ribbonPageGroupReports";
             this.ribbonPageGroupReports.Text = "Reports";
             // 
@@ -843,5 +865,7 @@
         private DevExpress.XtraBars.BarButtonItem barBtnInvoices;
         private DevExpress.XtraBars.BarButtonItem barBtnProductsReport;
         private DevExpress.XtraBars.BarButtonItem barBtnHomeForm;
+        private DevExpress.XtraBars.BarButtonItem barBtnBrandReports;
+        private DevExpress.XtraBars.BarButtonItem barBtnCategoryReports;
     }
 }
