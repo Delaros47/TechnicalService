@@ -29,9 +29,15 @@ namespace Business.Concrete
             return new SuccessDataResult<List<CategoryProductDetailDto>>(_categoryDal.GetCategoryProductDetailDto());
         }
 
+        public IDataResult<List<MaxProductCategoryDto>> GetGetMaxProductCategoryDto()
+        {
+            return new SuccessDataResult<List<MaxProductCategoryDto>>(_categoryDal.GetMaxProductCategoryDto());
+        }
+
+
         public IResult Add(Category category)
         {
-            ValidationTool.Validate(new CategoryValidator(),category);
+            ValidationTool.Validate(new CategoryValidator(), category);
             _categoryDal.Add(category);
             return new SuccessResult(Messages.CategoryAdded);
         }
@@ -44,7 +50,7 @@ namespace Business.Concrete
 
         public IDataResult<Category> Get(int categoryId)
         {
-            return new SuccessDataResult<Category>(_categoryDal.Get(c=>c.CategoryId==categoryId));
+            return new SuccessDataResult<Category>(_categoryDal.Get(c => c.CategoryId == categoryId));
         }
 
         public IDataResult<List<Category>> GetAll()

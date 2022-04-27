@@ -16,6 +16,7 @@ namespace Business.Abstract
         IDataResult<Category> Get(int categoryId);
         IDataResult<int> GetTotalCategoriesCount();
         IDataResult<List<CategoryProductDetailDto>> GetCategoryProductDetailDto();
+        IDataResult<List<MaxProductCategoryDto>> GetGetMaxProductCategoryDto();
         IResult Add(Category category);
         IResult Update(Category category);
         IResult Delete(Category category);

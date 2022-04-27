@@ -23,9 +23,6 @@ namespace Universal.Utilities.Concrete
 
         }
 
-        public SuccessDataResult() : base(default, true)
-        {
 
-        }
     }
 }

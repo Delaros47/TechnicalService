@@ -42,6 +42,7 @@ namespace TechnicalServiceUI.Forms
             GetTotalComputerStockNumber();
             GetTotalSmallAppliancesStockNumber();
             GetMalfunctionProductNumber();
+            GetMaximumProductCategory();
         }
 
         private void GetTotalProductsCount()
@@ -102,6 +103,11 @@ namespace TechnicalServiceUI.Forms
         private void GetMalfunctionProductNumber()
         {
             lblMalfunctionProductNumber.Text = _productAcceptanceService.GetProductMalfunctionNumber().Data.ToString();
+        }
+
+        private void GetMaximumProductCategory()
+        {
+            lblMaximumProductCategory.Text = _categoryService.GetGetMaxProductCategoryDto().Data.ToString();
         }
     }
 }

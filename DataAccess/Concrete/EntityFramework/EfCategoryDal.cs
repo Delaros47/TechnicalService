@@ -31,5 +31,24 @@ namespace DataAccess.Concrete.EntityFramework
                 return result.ToList();
             }
         }
+
+        public List<MaxProductCategoryDto> GetMaxProductCategoryDto()
+        {
+            using (var context = new TechinalServiceContext())
+            {
+                var result = from c in context.Categories
+                    join p in context.Products
+                        on c.CategoryId equals p.CategoryId
+                    group c.CategoryName by c.CategoryName
+                    into groupCategory
+                    orderby groupCategory.Count()
+                    select new MaxProductCategoryDto
+                    {
+                        CategoryName = groupCategory.Key,
+                        TotalProducts = groupCategory.Count()
+                    };
+                return result.ToList();
+            }
+        }
     }
 }

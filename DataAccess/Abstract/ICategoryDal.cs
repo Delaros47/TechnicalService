@@ -12,6 +12,7 @@ namespace DataAccess.Abstract
     public interface ICategoryDal:IEntityRepository<Category>
     {
         List<CategoryProductDetailDto> GetCategoryProductDetailDto();
+        List<MaxProductCategoryDto> GetMaxProductCategoryDto();
 
     }
 }
