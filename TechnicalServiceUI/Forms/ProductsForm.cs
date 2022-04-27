@@ -29,6 +29,10 @@ namespace TechnicalServiceUI.Forms
 
         private void ProductsForm_Load(object sender, EventArgs e)
         {
+
+            gridViewProducts.Appearance.Row.BackColor = Color.Silver;
+            gridViewProducts.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllBrands();
             GetAllCategories();
             GetAllProducts();

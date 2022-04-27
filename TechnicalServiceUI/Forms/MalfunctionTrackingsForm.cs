@@ -25,6 +25,9 @@ namespace TechnicalServiceUI.Forms
 
         private void MalfunctionTrackingsForm_Load(object sender, EventArgs e)
         {
+            gridViewMalfunctionTracking.Appearance.Row.BackColor = Color.Silver;
+            gridViewMalfunctionTracking.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllMalfunctionTrackings();
         }
 

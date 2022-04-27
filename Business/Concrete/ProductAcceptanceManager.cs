@@ -24,6 +24,11 @@ namespace Business.Concrete
             _productAcceptanceDal = productAcceptanceDal;
         }
 
+        public IDataResult<int> GetProductMalfunctionNumber()
+        {
+            return new SuccessDataResult<int>(_productAcceptanceDal.GetAll().Count);
+        }
+
         public IResult Add(ProductAcceptance productAcceptance)
         {
             ValidationTool.Validate(new ProductAcceptanceValidator(),productAcceptance);

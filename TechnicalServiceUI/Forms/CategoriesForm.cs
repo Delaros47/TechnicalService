@@ -25,6 +25,10 @@ namespace TechnicalServiceUI.Forms
 
         private void CategoriesForm_Load(object sender, EventArgs e)
         {
+
+            gridViewCategories.Appearance.Row.BackColor = Color.Silver;
+            gridViewCategories.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllCategories();
         }
 

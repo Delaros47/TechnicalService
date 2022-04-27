@@ -25,6 +25,9 @@ namespace TechnicalServiceUI.Forms
 
         private void ProductSalesForm_Load(object sender, EventArgs e)
         {
+            gridViewProductSales.Appearance.Row.BackColor = Color.Silver;
+            gridViewProductSales.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetProductSaleDetailDto();
         }
 

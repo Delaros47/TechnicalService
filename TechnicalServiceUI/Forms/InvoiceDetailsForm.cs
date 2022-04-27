@@ -29,6 +29,9 @@ namespace TechnicalServiceUI.Forms
 
         private void InvoiceDetailsForm_Load(object sender, EventArgs e)
         {
+            gridViewInvoiceDetails.Appearance.Row.BackColor = Color.Silver;
+            gridViewInvoiceDetails.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllByDistinctProductName();
             GetInvoiceInfosId();
             GetInvoiceDetailDto();

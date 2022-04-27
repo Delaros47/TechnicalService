@@ -15,6 +15,7 @@ namespace Business.Abstract
         IDataResult<List<ProductAcceptance>> GetAll();
         IDataResult<ProductAcceptance> Get(int productAcceptanceId);
         IDataResult<List<ProductAcceptanceDetailDto>> GetProductAcceptanceDetailDto();
+        IDataResult<int> GetProductMalfunctionNumber();
         IResult Add(ProductAcceptance productAcceptance);
         IResult Update(ProductAcceptance productAcceptance);
         IResult Delete(ProductAcceptance productAcceptance);

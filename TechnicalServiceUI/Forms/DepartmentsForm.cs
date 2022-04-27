@@ -25,6 +25,9 @@ namespace TechnicalServiceUI.Forms
 
         private void DepartmentsForm_Load(object sender, EventArgs e)
         {
+            gridViewDepartments.Appearance.Row.BackColor = Color.Silver;
+            gridViewDepartments.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllDepartments();
         }
 

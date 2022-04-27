@@ -24,6 +24,9 @@ namespace TechnicalServiceUI.Forms
 
         private void CustomerCityStatisticsForm_Load(object sender, EventArgs e)
         {
+            gridViewCustomerCityStatistics.Appearance.Row.BackColor = Color.Silver;
+            gridViewCustomerCityStatistics.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetCustomerCityStatisticsDto();
             chartControlCustomerCityStatistics.Series["Series 1"].LegendTextPattern = "{A}";
             FillMyCustomerCityStatisticsChart();

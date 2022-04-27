@@ -25,6 +25,12 @@ namespace TechnicalServiceUI.Forms
 
         private void NotesForm_Load(object sender, EventArgs e)
         {
+            gridViewReadNotes.Appearance.Row.BackColor = Color.Silver;
+            gridViewReadNotes.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
+            gridViewUnReadNotes.Appearance.Row.BackColor = Color.Silver;
+            gridViewReadNotes.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllNotesWithRead();
             GetAllNotesWithUnRead();
         }

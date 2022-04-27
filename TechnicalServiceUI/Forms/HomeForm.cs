@@ -30,6 +30,18 @@ namespace TechnicalServiceUI.Forms
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
+            gridViewProducts.Appearance.Row.BackColor = Color.Silver;
+            gridViewProducts.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
+            gridViewBrands.Appearance.Row.BackColor = Color.Silver;
+            gridViewBrands.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
+            gridViewCategories.Appearance.Row.BackColor = Color.Silver;
+            gridViewCategories.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
+            gridViewDepartments.Appearance.Row.BackColor = Color.Silver;
+            gridViewDepartments.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetCategoryProductDetailDto();
             GetProductDetailDto();
             GetBrandsWithTotalProductNumber();

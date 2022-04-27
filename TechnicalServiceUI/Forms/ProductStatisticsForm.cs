@@ -18,12 +18,14 @@ namespace TechnicalServiceUI.Forms
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
         private readonly IBrandService _brandService;
+        private readonly IProductAcceptanceService _productAcceptanceService;
         public ProductStatisticsForm()
         {
             InitializeComponent();
             _productService = InstanceFactory.GetInstance<IProductService>();
             _categoryService = InstanceFactory.GetInstance<ICategoryService>();
             _brandService = InstanceFactory.GetInstance<IBrandService>();
+            _productAcceptanceService = InstanceFactory.GetInstance<IProductAcceptanceService>();
         }
 
         private void ProductStatisticsForm_Load(object sender, EventArgs e)
@@ -39,6 +41,7 @@ namespace TechnicalServiceUI.Forms
             GetTotalWhiteGoodsStockNumber();
             GetTotalComputerStockNumber();
             GetTotalSmallAppliancesStockNumber();
+            GetMalfunctionProductNumber();
         }
 
         private void GetTotalProductsCount()
@@ -94,6 +97,11 @@ namespace TechnicalServiceUI.Forms
         private void GetTotalSmallAppliancesStockNumber()
         {
             lblSmallAppliancesStock.Text = _productService.GetTotalSmallAppliancesStockNumber(5).Data.ToString();
+        }
+
+        private void GetMalfunctionProductNumber()
+        {
+            lblMalfunctionProductNumber.Text = _productAcceptanceService.GetProductMalfunctionNumber().Data.ToString();
         }
     }
 }

@@ -30,6 +30,9 @@ namespace TechnicalServiceUI.Forms
 
         private void CustomersForm_Load(object sender, EventArgs e)
         {
+            gridViewCustomers.Appearance.Row.BackColor = Color.Silver;
+            gridViewCustomers.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllCities();
             GetAllBanks();
             GetAllCustomers();

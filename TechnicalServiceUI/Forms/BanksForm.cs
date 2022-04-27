@@ -47,6 +47,10 @@ namespace TechnicalServiceUI.Forms
 
         private void BanksForm_Load(object sender, EventArgs e)
         {
+            gridViewBanks.Appearance.Row.BackColor = Color.Silver;
+            gridViewBanks.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
+
             GetAllBanks();
         }
 

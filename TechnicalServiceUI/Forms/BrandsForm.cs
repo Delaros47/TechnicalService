@@ -25,6 +25,9 @@ namespace TechnicalServiceUI.Forms
 
         private void BrandsForm_Load(object sender, EventArgs e)
         {
+            gridViewBrands.Appearance.Row.BackColor = Color.Silver;
+            gridViewBrands.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllBrands();
         }
 

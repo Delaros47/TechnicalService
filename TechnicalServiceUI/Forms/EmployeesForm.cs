@@ -28,6 +28,9 @@ namespace TechnicalServiceUI.Forms
 
         private void EmployeesForm_Load(object sender, EventArgs e)
         {
+            gridViewEmployees.Appearance.Row.BackColor = Color.Silver;
+            gridViewEmployees.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetAllDepartments();
             GetAllEmployeesDetailDto();
         }

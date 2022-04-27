@@ -24,6 +24,9 @@ namespace TechnicalServiceUI.Forms
 
         private void BrandStatisticsForm_Load(object sender, EventArgs e)
         {
+            gridViewBrandStatistics.Appearance.Row.BackColor = Color.Silver;
+            gridViewBrandStatistics.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetBrandStatisticsDto();
             chartControlBrands.Series["Series 1"].LegendTextPattern = "{A}";
             chartControlBrandProducts.Series["Series 1"].LegendTextPattern = "{A}";

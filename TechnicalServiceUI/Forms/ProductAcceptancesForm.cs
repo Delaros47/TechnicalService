@@ -24,6 +24,9 @@ namespace TechnicalServiceUI.Forms
 
         private void ProductAcceptancesForm_Load(object sender, EventArgs e)
         {
+            gridViewProductAcceptances.Appearance.Row.BackColor = Color.Silver;
+            gridViewProductAcceptances.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
+
             GetProductAcceptanceDetailDto();
             chartControlProductAcceptances.Series["Series 1"].LegendTextPattern = "{A}";
         }
