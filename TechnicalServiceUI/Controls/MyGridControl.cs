@@ -17,6 +17,8 @@ namespace TechnicalServiceUI.Controls
         {
 
             var view = (GridView)CreateView("MyGridView");
+            view.Appearance.Row.BackColor = Color.Silver;
+            view.Appearance.Row.BackColor2 = Color.FromArgb(224, 224, 224);
             view.Appearance.ViewCaption.ForeColor = Color.Maroon;
             view.Appearance.HeaderPanel.ForeColor = Color.Maroon;
             view.Appearance.HeaderPanel.TextOptions.HAlignment = HorzAlignment.Center;
@@ -40,6 +42,7 @@ namespace TechnicalServiceUI.Controls
             view.OptionsView.RowAutoHeight = true;
             view.OptionsView.HeaderFilterButtonShowMode = FilterButtonShowMode.Button;
 
+            
 
             return view;
         }

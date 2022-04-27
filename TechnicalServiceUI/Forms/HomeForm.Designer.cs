@@ -252,7 +252,7 @@
             this.colBrandsBrandName.OptionsColumn.AllowEdit = false;
             this.colBrandsBrandName.Visible = true;
             this.colBrandsBrandName.VisibleIndex = 0;
-            this.colBrandsBrandName.Width = 300;
+            this.colBrandsBrandName.Width = 290;
             // 
             // colTotalProducts
             // 
@@ -262,7 +262,7 @@
             this.colTotalProducts.OptionsColumn.AllowEdit = false;
             this.colTotalProducts.Visible = true;
             this.colTotalProducts.VisibleIndex = 1;
-            this.colTotalProducts.Width = 300;
+            this.colTotalProducts.Width = 290;
             // 
             // gridControlCategories
             // 
@@ -314,7 +314,7 @@
             this.colCatCategoryName.OptionsColumn.AllowEdit = false;
             this.colCatCategoryName.Visible = true;
             this.colCatCategoryName.VisibleIndex = 0;
-            this.colCatCategoryName.Width = 300;
+            this.colCatCategoryName.Width = 290;
             // 
             // colProductNumber
             // 
@@ -324,7 +324,7 @@
             this.colProductNumber.OptionsColumn.AllowEdit = false;
             this.colProductNumber.Visible = true;
             this.colProductNumber.VisibleIndex = 1;
-            this.colProductNumber.Width = 300;
+            this.colProductNumber.Width = 290;
             // 
             // HomeForm
             // 

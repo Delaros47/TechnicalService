@@ -536,6 +536,7 @@
             // 
             // ribbonPageGroupMainForm
             // 
+            this.ribbonPageGroupMainForm.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ribbonPageGroupMainForm.ImageOptions.SvgImage")));
             this.ribbonPageGroupMainForm.ItemLinks.Add(this.barBtnHomeForm);
             this.ribbonPageGroupMainForm.Name = "ribbonPageGroupMainForm";
             // 
