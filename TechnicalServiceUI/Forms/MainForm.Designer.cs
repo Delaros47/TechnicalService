@@ -102,7 +102,6 @@
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageReports = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupReports = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageTools = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupTools = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageContact = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupContact = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -176,7 +175,6 @@
             this.ribbonPageInvoices,
             this.ribbonPageStatistics,
             this.ribbonPageReports,
-            this.ribbonPageTools,
             this.ribbonPageContact});
             this.ribbonControl1.Size = new System.Drawing.Size(1298, 153);
             // 
@@ -738,11 +736,7 @@
             // 
             // ribbonPageTools
             // 
-            this.ribbonPageTools.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroupTools});
-            this.ribbonPageTools.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageTools.ImageOptions.Image")));
-            this.ribbonPageTools.Name = "ribbonPageTools";
-            this.ribbonPageTools.Text = "TOOLS";
+
             // 
             // ribbonPageGroupTools
             // 
@@ -837,7 +831,6 @@
         private DevExpress.XtraBars.BarButtonItem barBtnPassiveInvoice;
         private DevExpress.XtraBars.BarButtonItem barBtnInvoicePdf;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupInvoices;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPageTools;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupTools;
         private DevExpress.XtraBars.BarButtonItem barBtnNewNote;
         private DevExpress.XtraBars.BarButtonItem barBtnCalculator;
