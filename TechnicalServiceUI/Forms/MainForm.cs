@@ -46,6 +46,8 @@ namespace TechnicalServiceUI.Forms
         private ProductsReport _productsReport;
         private BrandsReport _brandsReport;
         private CategoriesReport _categoriesReport;
+        private EmployeesReport _employeesReport;
+        private CustomersReport _customersReport;
 
         public MainForm()
         {
@@ -65,7 +67,12 @@ namespace TechnicalServiceUI.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            if (_homeForm == null || _homeForm.IsDisposed)
+            {
+                _homeForm = new HomeForm();
+                _homeForm.MdiParent = this;
+                _homeForm.Show();
+            }
         }
 
         private void barBtnNewProduct_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -363,6 +370,24 @@ namespace TechnicalServiceUI.Forms
             {
                 _categoriesReport = new CategoriesReport();
                 _categoriesReport.Show();
+            }
+        }
+
+        private void barBtnEmployeeReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_employeesReport==null || _employeesReport.IsDisposed)
+            {
+                _employeesReport = new EmployeesReport();
+                _employeesReport.Show();
+            }
+        }
+
+        private void barBtnCustomerReports_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (_customersReport ==null || _customersReport.IsDisposed)
+            {
+                _customersReport = new CustomersReport();
+                _customersReport.Show();
             }
         }
     }
