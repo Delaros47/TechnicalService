@@ -107,7 +107,7 @@ namespace TechnicalServiceUI.Forms
 
         private void GetMaximumProductCategory()
         {
-            lblMaximumProductCategory.Text = _categoryService.GetGetMaxProductCategoryDto().Data.ToString();
+            lblMaximumProductCategory.Text = _categoryService.GetGetMaxProductCategoryDto().Data.CategoryName;
         }
     }
 }

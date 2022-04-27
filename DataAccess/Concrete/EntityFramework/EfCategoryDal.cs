@@ -32,7 +32,7 @@ namespace DataAccess.Concrete.EntityFramework
             }
         }
 
-        public List<MaxProductCategoryDto> GetMaxProductCategoryDto()
+        public MaxProductCategoryDto GetMaxProductCategoryDto()
         {
             using (var context = new TechinalServiceContext())
             {
@@ -41,13 +41,13 @@ namespace DataAccess.Concrete.EntityFramework
                         on c.CategoryId equals p.CategoryId
                     group c.CategoryName by c.CategoryName
                     into groupCategory
-                    orderby groupCategory.Count()
+                    orderby groupCategory.Count() descending 
                     select new MaxProductCategoryDto
                     {
                         CategoryName = groupCategory.Key,
                         TotalProducts = groupCategory.Count()
                     };
-                return result.ToList();
+                return result.FirstOrDefault();
             }
         }
     }

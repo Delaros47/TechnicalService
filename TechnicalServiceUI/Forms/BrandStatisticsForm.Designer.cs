@@ -155,7 +155,8 @@
             this.chartControlBrandProducts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControlBrandProducts.Location = new System.Drawing.Point(2, 2);
             this.chartControlBrandProducts.Name = "chartControlBrandProducts";
-            series2.Name = "Series 1";
+            series2.LegendTextPattern = "{A}";
+            series2.Name = "Categories";
             this.chartControlBrandProducts.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
             this.chartControlBrandProducts.Size = new System.Drawing.Size(943, 189);

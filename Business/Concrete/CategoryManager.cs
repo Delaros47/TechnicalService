@@ -29,9 +29,9 @@ namespace Business.Concrete
             return new SuccessDataResult<List<CategoryProductDetailDto>>(_categoryDal.GetCategoryProductDetailDto());
         }
 
-        public IDataResult<List<MaxProductCategoryDto>> GetGetMaxProductCategoryDto()
+        public IDataResult<MaxProductCategoryDto> GetGetMaxProductCategoryDto()
         {
-            return new SuccessDataResult<List<MaxProductCategoryDto>>(_categoryDal.GetMaxProductCategoryDto());
+            return new SuccessDataResult<MaxProductCategoryDto>(_categoryDal.GetMaxProductCategoryDto());
         }
 
 
