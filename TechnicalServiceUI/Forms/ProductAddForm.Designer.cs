@@ -364,6 +364,7 @@
             this.ClientSize = new System.Drawing.Size(420, 382);
             this.Controls.Add(this.panelControl2);
             this.Name = "ProductAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Product";
             this.Load += new System.EventHandler(this.ProductAddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();

@@ -220,6 +220,10 @@
             // 
             this.txtEmailAddress.Location = new System.Drawing.Point(102, 132);
             this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.Strong;
+            this.txtEmailAddress.Properties.Mask.EditMask = "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
+    "-])+)+";
+            this.txtEmailAddress.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
             this.txtEmailAddress.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtEmailAddress.Properties.MaskSettings.Set("allowBlankInput", true);
             this.txtEmailAddress.Properties.MaskSettings.Set("mask", "((([0-9a-zA-Z_%-])+[.])+|([0-9a-zA-Z_%-])+)+@((([0-9a-zA-Z_-])+[.])+|([0-9a-zA-Z_" +
@@ -239,6 +243,9 @@
             this.txtPhoneNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtPhoneNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtPhoneNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtPhoneNumber.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtPhoneNumber.Properties.Mask.EditMask = "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?";
+            this.txtPhoneNumber.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtPhoneNumber.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
             this.txtPhoneNumber.Properties.MaskSettings.Set("mask", "(0\\d?\\d?\\d?) \\d?\\d?\\d? \\d?\\d? \\d?\\d?");
             this.txtPhoneNumber.Properties.MaskSettings.Set("isAutoComplete", false);
@@ -256,6 +263,8 @@
             this.txtIdentityNumber.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.txtIdentityNumber.Properties.AppearanceFocused.BackColor = System.Drawing.Color.LightCyan;
             this.txtIdentityNumber.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtIdentityNumber.Properties.Mask.AutoComplete = DevExpress.XtraEditors.Mask.AutoCompleteType.None;
+            this.txtIdentityNumber.Properties.Mask.EditMask = "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?";
             this.txtIdentityNumber.Properties.MaskSettings.Set("mask", "\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?\\d?");
             this.txtIdentityNumber.Properties.MaskSettings.Set("isAutoComplete", false);
             this.txtIdentityNumber.Properties.MaskSettings.Set("isOptimistic", false);
@@ -497,6 +506,7 @@
             this.ClientSize = new System.Drawing.Size(412, 379);
             this.Controls.Add(this.panelControl1);
             this.Name = "CustomerAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Customer";
             this.Load += new System.EventHandler(this.CustomerAddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

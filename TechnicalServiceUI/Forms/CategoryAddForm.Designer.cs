@@ -37,8 +37,8 @@
             this.myDataLayoutControl1 = new TechnicalServiceUI.Controls.MyDataLayoutControl();
             this.txtCategoryName = new TechnicalServiceUI.Controls.MyTextBox();
             this.txtCategoryId = new TechnicalServiceUI.Controls.MyTextBox();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -46,8 +46,8 @@
             this.myDataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCategoryName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCategoryId.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +121,17 @@
             this.txtCategoryId.StyleController = this.myDataLayoutControl1;
             this.txtCategoryId.TabIndex = 4;
             // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem1.Control = this.txtCategoryId;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(376, 79);
+            this.layoutControlItem1.Text = "Category ID";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -140,17 +151,6 @@
             this.Root.Size = new System.Drawing.Size(396, 69);
             this.Root.TextVisible = false;
             // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
-            this.layoutControlItem1.Control = this.txtCategoryId;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(376, 79);
-            this.layoutControlItem1.Text = "Category ID";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.Maroon;
@@ -169,6 +169,7 @@
             this.ClientSize = new System.Drawing.Size(422, 188);
             this.Controls.Add(this.panelControl2);
             this.Name = "CategoryAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Category";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
@@ -176,8 +177,8 @@
             this.myDataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtCategoryName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCategoryId.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.ResumeLayout(false);
 

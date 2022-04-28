@@ -57,6 +57,10 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<InvoiceDetailManager>().As<IInvoiceDetailService>().SingleInstance();
             builder.RegisterType<EfInvoiceDetailDal>().As<IInvoiceDetailDal>().SingleInstance();
 
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
+            builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
+
+
         }
     }
 }

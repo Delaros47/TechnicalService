@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(898, 768);
             this.Controls.Add(this.documentViewer1);
             this.Name = "ProductsReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products Report";
             this.Load += new System.EventHandler(this.ProductsReport_Load);
             this.ResumeLayout(false);

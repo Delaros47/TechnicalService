@@ -152,6 +152,7 @@
             this.Controls.Add(this.btnCreateQRCode);
             this.Controls.Add(this.myDataLayoutControl1);
             this.Name = "QRCodeAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add QR Code";
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();
             this.myDataLayoutControl1.ResumeLayout(false);

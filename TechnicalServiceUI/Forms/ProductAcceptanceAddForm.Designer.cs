@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition5 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition6 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition7 = new DevExpress.XtraLayout.RowDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition8 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition3 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition4 = new DevExpress.XtraLayout.RowDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductAcceptanceAddForm));
             this.myDataLayoutControl1 = new TechnicalServiceUI.Controls.MyDataLayoutControl();
             this.txtProductSeriesNumber = new TechnicalServiceUI.Controls.MyTextBox();
@@ -150,23 +150,23 @@
             this.layoutControlItem4});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition2.Width = 200D;
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 200D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition2});
-            rowDefinition5.Height = 24D;
-            rowDefinition5.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition6.Height = 24D;
-            rowDefinition6.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition7.Height = 24D;
-            rowDefinition7.SizeType = System.Windows.Forms.SizeType.Absolute;
-            rowDefinition8.Height = 24D;
-            rowDefinition8.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1});
+            rowDefinition1.Height = 24D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition2.Height = 24D;
+            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition3.Height = 24D;
+            rowDefinition3.SizeType = System.Windows.Forms.SizeType.Absolute;
+            rowDefinition4.Height = 24D;
+            rowDefinition4.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition5,
-            rowDefinition6,
-            rowDefinition7,
-            rowDefinition8});
+            rowDefinition1,
+            rowDefinition2,
+            rowDefinition3,
+            rowDefinition4});
             this.Root.Size = new System.Drawing.Size(398, 135);
             this.Root.TextVisible = false;
             // 
@@ -250,6 +250,7 @@
             this.Controls.Add(this.btnAddProductAcceptance);
             this.Controls.Add(this.myDataLayoutControl1);
             this.Name = "ProductAcceptanceAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Product Acceptance";
             this.Load += new System.EventHandler(this.ProductAcceptanceAddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myDataLayoutControl1)).EndInit();

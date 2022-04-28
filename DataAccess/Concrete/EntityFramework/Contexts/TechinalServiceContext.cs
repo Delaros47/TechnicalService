@@ -29,6 +29,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         public DbSet<Tracking> Trackings { get; set; }
         public DbSet<InvoiceInfo> InvoiceInfos { get; set; }
         public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
 

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentAddForm));
-            DevExpress.XtraLayout.ColumnDefinition columnDefinition2 = new DevExpress.XtraLayout.ColumnDefinition();
-            DevExpress.XtraLayout.RowDefinition rowDefinition2 = new DevExpress.XtraLayout.RowDefinition();
+            DevExpress.XtraLayout.ColumnDefinition columnDefinition1 = new DevExpress.XtraLayout.ColumnDefinition();
+            DevExpress.XtraLayout.RowDefinition rowDefinition1 = new DevExpress.XtraLayout.RowDefinition();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.btnAddDepartment = new TechnicalServiceUI.Controls.MySimpleButton();
             this.btnClearDepartment = new TechnicalServiceUI.Controls.MySimpleButton();
@@ -113,14 +113,14 @@
             this.layoutControlItem2});
             this.Root.LayoutMode = DevExpress.XtraLayout.Utils.LayoutMode.Table;
             this.Root.Name = "Root";
-            columnDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
-            columnDefinition2.Width = 200D;
+            columnDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1.Width = 200D;
             this.Root.OptionsTableLayoutGroup.ColumnDefinitions.AddRange(new DevExpress.XtraLayout.ColumnDefinition[] {
-            columnDefinition2});
-            rowDefinition2.Height = 24D;
-            rowDefinition2.SizeType = System.Windows.Forms.SizeType.Absolute;
+            columnDefinition1});
+            rowDefinition1.Height = 24D;
+            rowDefinition1.SizeType = System.Windows.Forms.SizeType.Absolute;
             this.Root.OptionsTableLayoutGroup.RowDefinitions.AddRange(new DevExpress.XtraLayout.RowDefinition[] {
-            rowDefinition2});
+            rowDefinition1});
             this.Root.Size = new System.Drawing.Size(366, 98);
             this.Root.TextVisible = false;
             // 
@@ -142,6 +142,7 @@
             this.ClientSize = new System.Drawing.Size(370, 132);
             this.Controls.Add(this.panelControl1);
             this.Name = "DepartmentAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Department";
             this.Load += new System.EventHandler(this.DepartmentAddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

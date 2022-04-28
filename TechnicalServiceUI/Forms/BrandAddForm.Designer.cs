@@ -169,13 +169,14 @@
             this.layoutControlItem3.Text = "Brand Description";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(84, 13);
             // 
-            // BrandNewForm
+            // BrandAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 394);
             this.Controls.Add(this.panelControl2);
-            this.Name = "BrandNewForm";
+            this.Name = "BrandAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Brand";
             this.Load += new System.EventHandler(this.BrandNewForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();

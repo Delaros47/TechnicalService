@@ -190,6 +190,7 @@
             this.ClientSize = new System.Drawing.Size(423, 372);
             this.Controls.Add(this.panelControl2);
             this.Name = "BankAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Bank";
             this.Load += new System.EventHandler(this.BankAddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
